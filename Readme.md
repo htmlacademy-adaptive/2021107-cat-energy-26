@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Паршин](https://up.htmlacademy.ru/adaptive/26/user/2021107).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
