@@ -1,5 +1,7 @@
 # Личный проект «Кэт энерджи»
 
+[![NPM version][check-image]][check-url]
+
 * Студент: [Александр Паршин](https://up.htmlacademy.ru/adaptive/26/user/2021107).
 * Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
@@ -7,22 +9,26 @@
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
-Полезный файл:
+Полезный файл: [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+_Не удаляйте и не обращайте внимание на файлы:_  
+- `.editorconfig`,
+- `.gitattributes`,
+- `.gitignore`,
+- `.stylelintrc`,
+- `.travis.yml`,
+- `package-lock.json`,
+- `package.json`.
 
 ---
 
-### Памятка
+## Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### 1. Зарегистрируйтесь на Гитхабе
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
-#### 2. Создайте форк
+### 2. Создайте форк
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/2021107-cat-energy-26) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
@@ -32,21 +38,21 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
 
-#### 3. Клонируйте репозиторий на свой компьютер
+### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
+<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808192-54b4ac00-a190-11e9-804e-4565b5bd699c.jpg">
 
 Клонировать репозиторий можно так:
 
-```
+```bash
 git clone SSH-адрес_вашего_форка
 ```
 
 Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-#### 4. Начинайте обучение!
+### 4. Начинайте обучение!
 
 ---
 
