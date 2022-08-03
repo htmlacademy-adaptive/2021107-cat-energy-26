@@ -64,13 +64,13 @@
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Вес (кг):*</span>
-							<input class="animal-parameters__input" type="number" name="name" value="7" />
+							<input class="animal-parameters__input" type="number" name="weight" value="7" />
 						</label>
 					</li>
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Возраст (лет):</span>
-							<input class="animal-parameters__input" type="number" name="name" value="7" />
+							<input class="animal-parameters__input" type="number" name="year" value="7" />
 						</label>
 					</li>
 
@@ -102,7 +102,68 @@
 				</ul>
 			</fieldset>
 
+			<fieldset class="form__parameters contacts-buyer">
+				<legend class="contacts-buyer__legend visible-legend">Контактные данные (владельца кота)</legend>
+				<ul class="contacts-buyer__list">
+					<li class="contacts-buyer__item ">
+						<label class="contacts-buyer__label">
+							<span class="contacts-buyer__text">E-mail:*</span>
+							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" />
+						</label>
+					</li>
+					<li class="contacts-buyer__item">
+						<label class="contacts-buyer__label type-radio">
+							<span class="contacts-buyer__text">Телефон:*</span>
+							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+						</label>
+					</li>
+
+				</ul>
+			</fieldset>
+
+			<fieldset class="form__parameters comment-buyer">
+				<legend class="comment-buyer__legend visible-legend">Комментарий</legend>
+				<label class="comment-buyer__label">
+					<textarea class="comment-buyer__textarea" name="comment" cols="35" rows="5">Расскажите обо всех повАдках кота</textarea>
+				</label>
+			</fieldset>
+
+			<fieldset class="form__parameters optionally">
+				<legend class="optionally__legend visible-legend">Дополнительно</legend>
+				<ul class="optionally__list">
+					<li class="optionally__item ">
+						<label class="optionally__label type-checkbox">
+							<input class="optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked />
+							<span class="optionally__text">сахарозаменитель</span>
+						</label>
+					</li>
+					<li class="optionally__item">
+						<label class="optionally__label ttype-checkbox">
+							<input class="optionally__input" type="checkbox" name="optionally" value="water" />
+							<span class="optionally__text">питьевая вода</span>
+						</label>
+					</li>
+					<li class="optionally__item">
+						<label class="optionally__label type-checkbox">
+							<input class="optionally__input" type="checkbox" name="optionally" value="milk" />
+							<span class="optionally__text">молоко</span>
+						</label>
+					</li>
+					<li class="optionally__item">
+						<label class="optionally__label type-checkbox">
+							<input class="optionally__input" type="checkbox" name="optionally" value="vitamins" />
+							<span class="optionally__text">витамины</span>
+						</label>
+					</li>
+
+				</ul>
+			</fieldset>
+
+			<button class="form__button button" type="submit">отправить заявку</button>
+
 		</form>
+
+		<p class="main-container-form__text main-container-form__text--footnote">* — Обязательные поля</p>
 
 	</main>
 
