@@ -57,19 +57,19 @@
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">ИМЯ:*</span>
-							<input class="animal-parameters__input animal-parameters__input--text" type="text" name="name" value="барсик" />
+							<input class="animal-parameters__input animal-parameters__input--text" type="text" name="name" value="барсик" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Вес (кг):*</span>
-							<input class="animal-parameters__input" type="number" name="weight" value="7" />
+							<input class="animal-parameters__input" type="number" name="weight" value="7" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Возраст (лет):</span>
-							<input class="animal-parameters__input" type="number" name="year" value="7" />
+							<input class="animal-parameters__input" type="number" name="year" value="7">
 						</label>
 					</li>
 
@@ -81,19 +81,19 @@
 				<ul class="effect__list">
 					<li class="effect__item ">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="slim" checked />
+							<input class="effect__input" type="radio" name="effect" value="slim" checked>
 							<span class="effect__text">похудение</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="overweight" />
+							<input class="effect__input" type="radio" name="effect" value="overweight">
 							<span class="effect__text">Набор массы</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="suspense" />
+							<input class="effect__input" type="radio" name="effect" value="suspense">
 							<span class="effect__text">Не знаю (Нужен ваш совет)</span>
 						</label>
 					</li>
@@ -107,50 +107,48 @@
 					<li class="contacts-buyer__item ">
 						<label class="contacts-buyer__label">
 							<span class="contacts-buyer__text">E-mail:*</span>
-							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" />
+							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
 						</label>
 					</li>
 					<li class="contacts-buyer__item">
 						<label class="contacts-buyer__label type-radio">
 							<span class="contacts-buyer__text">Телефон:*</span>
-							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
 						</label>
 					</li>
 
 				</ul>
 			</fieldset>
 
-			<fieldset class="form__parameters comment-buyer">
-				<legend class="comment-buyer__legend visible-legend">Комментарий</legend>
-				<label class="comment-buyer__label">
-					<textarea class="comment-buyer__textarea" name="comment" cols="35" rows="5">Расскажите обо всех повАдках кота</textarea>
-				</label>
-			</fieldset>
+			<div class="form__parameters comment-buyer">
+				<label class="comment-buyer__label visible-legend" for="form-comment">Комментарий</label>
+				<textarea class="comment-buyer__textarea" name="comment" id="form-comment" cols="35" rows="5">Расскажите обо всех повАдках кота</textarea>
+			</div>
 
 			<fieldset class="form__parameters optionally">
 				<legend class="optionally__legend visible-legend">Дополнительно</legend>
 				<ul class="optionally__list">
 					<li class="optionally__item ">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked />
+							<input class="optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked>
 							<span class="optionally__text">сахарозаменитель</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label ttype-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="water" />
+							<input class="optionally__input" type="checkbox" name="optionally" value="water">
 							<span class="optionally__text">питьевая вода</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="milk" />
+							<input class="optionally__input" type="checkbox" name="optionally" value="milk">
 							<span class="optionally__text">молоко</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="vitamins" />
+							<input class="optionally__input" type="checkbox" name="optionally" value="vitamins">
 							<span class="optionally__text">витамины</span>
 						</label>
 					</li>
