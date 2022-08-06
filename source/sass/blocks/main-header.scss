@@ -1,0 +1,10 @@
+.main-header {
+	box-sizing: border-box;
+	width: 320px;
+	margin: 0 auto;
+	padding: 10px 20px 17px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: #ffffff;
+	color: #000000;
+}
