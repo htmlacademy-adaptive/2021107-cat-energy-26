@@ -1,10 +1,29 @@
 .main-header {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.main-header__wrapper {
 	box-sizing: border-box;
 	width: 320px;
 	margin: 0 auto;
 	padding: 10px 20px 17px 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background-color: #ffffff;
-	color: #000000;
+	align-items: center;
+	position: relative;
+}
+
+.main-nav {
+	justify-self: end;
+}
+
+.main-nav__wrapper {
+	display: none;
+}
+
+.main-nav__list {
+	position: absolute;
+	top: 100%;
+	left: 0;
 }
