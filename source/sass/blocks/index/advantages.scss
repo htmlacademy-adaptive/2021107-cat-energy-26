@@ -7,44 +7,16 @@
 	box-sizing: border-box;
 	width: 320px;
 	margin: 0 auto;
-	padding: 27px 20px;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.advantages__title {
-	z-index: 1;
+.advantages-present {
+	margin-bottom: 20px;
 }
 
-.advantages__slogan {
-	z-index: 1;
-}
-
-.advantages__images__wrapper--mobile {
-	position: relative;
-
-	&::before {
-		content: "";
-		position: absolute;
-		bottom: 50%;
-		width: 320px;
-		height: 302px;
-		background-image: url("../../../img/advantages-index-logo@1x.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 50%;
-		left: 0;
-		width: 320px;
-		height: 302px;
-		background-image: url("../../../img/advantages-index-background@1x.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-}
-
-.advantages__images {
-	z-index: 1;
+.advantages__card {
+	margin-bottom: 20px;
 }

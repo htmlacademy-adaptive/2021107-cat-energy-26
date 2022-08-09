@@ -1,0 +1,67 @@
+.advantages-present {
+	padding: 27px 20px 0;
+}
+
+.advantages-present--mobile {
+
+	background-image:
+		url("../../../img/advantages-index-background@1x.png"),
+		url("../../../img/advantages-index-logo@1x.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	bottom: 50%;
+	// 	width: 320px;
+	// 	height: 302px;
+	// 	background-image: url("../../../img/advantages-index-logo@1x.png");
+	// 	background-size: contain;
+	// 	background-repeat: no-repeat;
+	// }
+
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	bottom: 50%;
+	// 	left: 0;
+	// 	width: 320px;
+	// 	height: 302px;
+	// 	background-image: url("../../../img/advantages-index-background@1x.png");
+	// 	background-size: cover;
+	// 	background-repeat: no-repeat;
+	// }
+}
+
+// .advantages-present__wrapper-text {
+// 	background: rgba(104, 183, 56, 0.85);
+// 	z-index: -1;
+// }
+
+.advantages-present__title {
+	margin: 0 0 25px;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.advantages-present__slogan {
+	margin: 0 0 29px;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+}
+
+.advantages-present__images {
+	margin-bottom: 3px;
+}

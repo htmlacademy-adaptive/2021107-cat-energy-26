@@ -1,8 +1,32 @@
 .statistics {
+	background-color: #eaeaea;
+	color: #000000;
+}
+
+.statistics__wrapper {
 	box-sizing: border-box;
 	width: 320px;
 	margin: 0 auto;
-	padding: 25px 20px 40px;
-	background-color: #eaeaea;
+	padding: 66px 20px 40px;
+}
+
+.statistics__title {
+	margin: 0 0 40px;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: left;
 	color: #000000;
+}
+
+.statistics__description {
+	margin: 0 0 20px;
+	font-family: "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #444444;
 }

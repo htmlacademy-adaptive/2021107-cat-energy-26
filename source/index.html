@@ -8,7 +8,6 @@
 </main>
 {% endblock %} #}
 
-
 {% block main %}
 <main class="main-container">
 
@@ -16,12 +15,15 @@
 
 	<section class="advantages">
 		<div class="advantages__wrapper">
-			<h2 class="advantages__title">Функциональное питание для котов</h2>
-			<p class="advantages__slogan">Занялся собой? Займись котом!</p>
-			<div class="advantages__images__wrapper advantages__images__wrapper--mobile">
-				<img class="advantages__images" src="img/food-packaging-mobile@1x.png" width="280" height="270" alt="Баночка кошачей еды.">
+			<div class="advantages__present advantages-present advantages-present--mobile">
+				<div class="advantages-present__wrapper-text">
+					<h2 class="advantages-present__title">Функциональное питание для котов</h2>
+					<p class="advantages-present__slogan">Занялся собой? Займись котом!</p>
+				</div>
+				<img class="advantages-present__images" src="img/food-packaging-mobile@1x.png" width="280" height="270" alt="Баночка кошачей еды.">
+				<a class="advantages__button button" href="form.html">подобрать программу</a>
 			</div>
-			<a class="advantages__button button" href="form.html">подобрать программу</a>
+
 			<div class="advantages__card advantages-card">
 				<h3 class="advantages-card__title">похудение</h3>
 				<p class="advantages-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -60,12 +62,18 @@
 			<h2 class="statistics__title">Живой пример</h2>
 			<p class="statistics__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 			<dl class="statistics__example example">
-				<dt class="example__description">снижение веса</dt>
-				<dd class="example__quantity">5 КГ</dd>
-				<dt class="example__description">затрачено времени</dt>
-				<dd class="example__quantity">60 ДНЕЙ</dd>
-				<dt class="example__description example__description--view">Затраты на питание:</dt>
-				<dd class="example__quantity example__quantity--view">15 000 РУБ.</dd>
+				<div class="example__wrap">
+					<dt class="example__description">снижение веса</dt>
+					<dd class="example__quantity">5 КГ</dd>
+				</div>
+				<div class="example__wrap">
+					<dt class="example__description">затрачено времени</dt>
+					<dd class="example__quantity">60 ДНЕЙ</dd>
+				</div>
+				<div class="example__wrap example__wrap--result">
+					<dt class="example__description example__description--view">Затраты на питание:</dt>
+					<dd class="example__quantity example__quantity--view">15 000 РУБ.</dd>
+				</div>
 			</dl>
 			<div class="statistics__images-wrapper">
 				<img class="statistics__images" src="img/cat-mobile@1x.png" width="280" height="232" alt="Кот &ldquo;до&rdquo; или &ldquo;после&rdquo; приёма функционального питания.">
