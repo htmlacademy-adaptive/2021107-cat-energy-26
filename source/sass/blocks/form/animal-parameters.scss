@@ -1,0 +1,47 @@
+.animal-parameters {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 24px;
+	border: none;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.animal-parameters__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 13px;
+}
+
+.animal-parameters__label {
+	display: flex;
+}
+
+.animal-parameters__text {
+	margin-right: 12px;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #444444;
+	align-self: center;
+}
+
+.animal-parameters__input {
+	flex-grow: 1;
+	padding: 14px;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #444444;
+	border: 1px solid #e7e7e7;
+}

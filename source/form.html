@@ -8,13 +8,12 @@
 </main>
 {% endblock %} #}
 
+{% block main %}
+<main class="main-container">
+	<div class="main-container-form">
+		<h1 class="main-container-form__title">Подбор программы</h1>
 
-	{% block main %}
-	<main class="main-container main-container-form">
-
-		<h1 class="main-container__title">Подбор программы</h1>
-
-		<p class="main-container-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+		<p class="main-container-form__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
 
 		<form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
@@ -128,6 +127,7 @@
 		</form>
 
 		<p class="main-container-form__text main-container-form__text--footnote">* — Обязательные поля</p>
+	</div>
 
-	</main>
-	{% endblock %}
+</main>
+{% endblock %}
