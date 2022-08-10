@@ -3,37 +3,39 @@
 		<div class="main-footer__contacts contacts">
 			<h2 class="visually-hidden">Адрес</h2>
 			<div class="contacts__text contacts-text">
-				<b class="contacts-text__title">приглашаем к сотрудничеству дилеров!</b>
+				<b class="contacts-text__title">приглашаем <br>к сотрудничеству дилеров!</b>
 				<p class="contacts-text__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 			</div>
 			<img class="contacts__images map" src="img/location-mobile@1x.png" width="320" height="360" alt="Магазин на карте города.">
 		</div>
-		<div class="main-footer__home home-page">
-			<h2 class="visually-hidden">Главная страница</h2>
-			<a class="home-page__link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-				<img class="home-page__logo-text" src="img/logo-mobile-text.svg" width="128" height="24" alt="Магазин CAT ENERGY.">
-				<span class="visually-hidden">Магазин CAT ENERGY</span>
-			</a>
-		</div>
-		<div class="main-footer__social social">
-			<h2 class="visually-hidden">Социальные сети</h2>
-			<ul class="social__list">
-				<li class="social__item">
-					<a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-				</li>
-				<li class="social__item">
-					<a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-				</li>
-				<li class="social__item">
-					<a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-				</li>
-			</ul>
-		</div>
-		<div class="main-footer__copyright copyright">
-			<h2 class="visually-hidden">Партнёры</h2>
-			<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-				<span class="copyright__text">HTML Academy</span>
-			</a>
+		<div class="main-footer__social-wrap">
+			<div class="main-footer__social main-footer__social--home-page home-page">
+				<h2 class="visually-hidden">Главная страница</h2>
+				<a class="home-page__link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+					<img class="home-page__logo-text" src="img/logo-mobile-text.svg" width="128" height="24" alt="Магазин CAT ENERGY.">
+					<span class="visually-hidden">Магазин CAT ENERGY</span>
+				</a>
+			</div>
+			<div class="main-footer__social social">
+				<h2 class="visually-hidden">Социальные сети</h2>
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-footer__social copyright">
+				<h2 class="visually-hidden">Партнёры</h2>
+				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+					<span class="copyright__text">HTML Academy</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </footer>
