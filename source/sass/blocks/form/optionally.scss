@@ -1,0 +1,35 @@
+.optionally {
+	margin: 0;
+	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
+	padding: 34px 0;
+	border: none;
+}
+
+.optionally__legend {
+	padding: 10px 22px 0 0;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.optionally__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 15px;
+}
+
+.optionally__text {
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+}

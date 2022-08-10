@@ -1,25 +1,35 @@
-.animal-parameters {
+.contacts-buyer {
 	margin: 0;
-	padding: 22px 0 24px;
+	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
+	padding: 35px 0 12px;
 	border: none;
-	border-bottom: 1px solid #d9d9d9;
 }
 
-.animal-parameters__list {
+.contacts-buyer__legend {
+	padding: 26px 22px 0 0;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.contacts-buyer__list {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr;
-	row-gap: 13px;
+	row-gap: 14px;
 }
 
-.animal-parameters__label {
+.contacts-buyer__label {
 	display: flex;
 }
 
-.animal-parameters__text {
-	margin-right: 12px;
+.contacts-buyer__text {
+	margin-right: 10px;
 	align-self: center;
 	font-family: "Oswald", "Arial", sans-serif;
 	font-style: normal;
@@ -30,7 +40,7 @@
 	color: #444444;
 }
 
-.animal-parameters__input {
+.contacts-buyer__input {
 	flex-grow: 1;
 	padding: 14px;
 	font-family: "Oswald", "Arial", sans-serif;
@@ -38,9 +48,6 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
-	display: flex;
-	align-items: center;
 	text-transform: uppercase;
 	color: #444444;
-	border: 1px solid #e7e7e7;
 }

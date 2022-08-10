@@ -68,7 +68,7 @@
 			</fieldset>
 
 			<fieldset class="form__parameters contacts-buyer">
-				<legend class="contacts-buyer__legend visible-legend">Контактные данные (владельца кота)</legend>
+				<legend class="contacts-buyer__legend visible-legend">Контактные данные <br>(владельца кота)</legend>
 				<ul class="contacts-buyer__list">
 					<li class="contacts-buyer__item ">
 						<label class="contacts-buyer__label">
@@ -88,7 +88,9 @@
 
 			<div class="form__parameters comment-buyer">
 				<label class="comment-buyer__label visible-legend" for="form-comment">Комментарий</label>
-				<textarea class="comment-buyer__textarea" name="comment" id="form-comment" cols="35" rows="5">Расскажите обо всех повАдках кота</textarea>
+				<div class="comment-buyer__textarea__wrapper">
+					<textarea class="comment-buyer__textarea" name="comment" id="form-comment" cols="35" rows="5">Расскажите обо всех повАдках кота</textarea>
+				</div>
 			</div>
 
 			<fieldset class="form__parameters optionally">
@@ -122,7 +124,7 @@
 				</ul>
 			</fieldset>
 
-			<button class="form__button button" type="submit">отправить заявку</button>
+			<button class="main-container-form__button button" type="submit">отправить заявку</button>
 
 		</form>
 
