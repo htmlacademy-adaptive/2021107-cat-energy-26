@@ -4,9 +4,10 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
-// .contacts-text--form {
-// 	background-color: #f2f2f2;
-// }
+// Серый фон мобильная версия форма и каьалог
+.contacts-text--fill {
+	background-color: #f2f2f2;
+}
 
 .contacts-text__title {
 	font-family: "Oswald", "Arial", sans-serif;

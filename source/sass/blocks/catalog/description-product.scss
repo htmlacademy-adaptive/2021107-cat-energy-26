@@ -1,0 +1,21 @@
+.description-product {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family: "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #444444;
+}
+
+.description-product__description {
+	justify-self: start;
+}
+
+.description-product__quantity {
+	margin: 0;
+	justify-self: end;
+}

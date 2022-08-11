@@ -8,19 +8,21 @@
 </main>
 {% endblock %} #}
 
+{% block main %}
+<main class="main-container">
+	<div class="main-container-catalog">
 
-	{% block main %}
-	<main class="main-container">
-
-		<h1 class="main-container__title">Каталог продукции</h1>
+		<h1 class="main-container-catalog__title">Каталог продукции</h1>
 
 		<section class="product">
 			<h2 class="visually-hidden">Основная продукция</h2>
 			<ul class="product__list product-card">
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image product-card__image--small" src="img/products/product1-small-mobile@1x.jpg" width="68" height="86" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -33,9 +35,12 @@
 					</dl>
 					<a class="product-card__button button" href="#">заказать</a>
 				</li>
+
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image" src="img/products/product1-mobile@1x.jpg" width="84" height="101" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -50,8 +55,10 @@
 				</li>
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image product-card__image--small" src="img/products/product2-small-mobile@1x.jpg" width="68" height="86" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -66,8 +73,10 @@
 				</li>
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image" src="img/products/product2-mobile@1x.jpg" width="84" height="101" alt="Баночка кошачей еды.">
 
 					</a>
@@ -83,8 +92,10 @@
 				</li>
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image product-card__image--small" src="img/products/product3-small-mobile@1x.jpg" width="68" height="86" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -99,8 +110,10 @@
 				</li>
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
+					</a> F
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image" src="img/products/product3-mobile@1x.jpg" width="84" height="101" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -115,8 +128,10 @@
 				</li>
 
 				<li class="product-card__item">
-					<a class="product-card__link" href="#">
+					<a class="product-card__link product-card__link-text" href="#">
 						<h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+					</a>
+					<a class="product-card__link product-card__link-image" href="#">
 						<img class="product-card__image product-card__image--small" src="img/products/product4-small-mobile@1x.jpg" width="68" height="86" alt="Баночка кошачей еды.">
 					</a>
 					<dl class="product-card__description description-product">
@@ -209,5 +224,6 @@
 			<p class="stock__advantages">Закажите все и получите чехол для кота в подарок!</p>
 		</div>
 
-	</main>
-	{% endblock %}
+	</div>
+</main>
+{% endblock %}
