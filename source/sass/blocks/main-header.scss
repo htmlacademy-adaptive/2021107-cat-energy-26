@@ -22,6 +22,11 @@
 	display: none;
 }
 
+// Временное решение для удобства. Для вызова меню выбрать кнопку "main-nav__toggle" Tab
+.main-nav__toggle:focus-within ~ .main-nav__wrapper--modal {
+	display: block;
+}
+
 .main-nav__list {
 	position: absolute;
 	top: 100%;
