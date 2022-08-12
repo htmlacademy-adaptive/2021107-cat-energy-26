@@ -18,13 +18,13 @@
 	justify-self: end;
 }
 
-.main-nav__wrapper--modal {
-	display: none;
+// Временное решение для удобства. Для вызова меню навести курсор на кнопку "main-nav__toggle" и Tab выбирать
+.main-nav__toggle:hover ~ .main-nav__wrapper--modal {
+	display: block;
 }
 
-// Временное решение для удобства. Для вызова меню выбрать кнопку "main-nav__toggle" Tab
-.main-nav__toggle:focus-within ~ .main-nav__wrapper--modal {
-	display: block;
+.main-nav__wrapper--modal {
+	display: none;
 }
 
 .main-nav__list {
