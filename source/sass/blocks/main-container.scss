@@ -3,3 +3,47 @@
 	flex-grow: 1;
 	background-color: #ffffff;
 }
+
+.main-container__wrap {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 320px;
+	border-top: 1px solid #d9d9d9;
+}
+
+.main-container__wrap--form {
+	padding: 27px 0 0 0;
+}
+
+.main-container__wrap--catalog {
+	padding: 27px 20px 35px;
+}
+
+
+.main-container__title {
+	margin: 0 0 37px 0;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.main-container__text {
+	margin: 0 0 39px 0;
+	font-family: "Oswald", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.main-container__text--footnote {
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	font-style: normal;
+	line-height: 16px;
+}

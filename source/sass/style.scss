@@ -8,7 +8,6 @@
 @import "./blocks/main-header.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/body.scss";
 @import "./blocks/index/advantages.scss";
 @import "./blocks/index/service.scss";
 @import "./blocks/index/statistics.scss";
@@ -19,15 +18,17 @@
 @import "./blocks/contacts-text.scss";
 @import "./blocks/home-page.scss";
 @import "./blocks/social.scss";
-@import "./blocks/form/main-container-form.scss";
 @import "./blocks/form/animal-parameters.scss";
 @import "./blocks/form/effect.scss";
 @import "./blocks/form/contacts-buyer.scss";
 @import "./blocks/form/comment-buyer.scss";
 @import "./blocks/form/optionally.scss";
-@import "./blocks/catalog/main-container-catalog.scss";
 @import "./blocks/catalog/product-card.scss";
 @import "./blocks/catalog/description-product.scss";
 @import "./blocks/catalog/additional-product.scss";
 @import "./blocks/catalog/product-card-additional.scss";
 @import "./blocks/catalog/stock.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/form/form.scss";
