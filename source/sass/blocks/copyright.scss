@@ -1,0 +1,22 @@
+.copyright__link {
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.copyright__text {
+	font-family: "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #444444;
+}
+
+.copyright__image {
+	right: 0;
+	width: 24px;
+	height: 27px;
+	outline: 1px dashed #000000;
+	outline-offset: -1px;
+}
