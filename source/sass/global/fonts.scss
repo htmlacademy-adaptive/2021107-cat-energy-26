@@ -17,3 +17,8 @@
 		url("../../fonts/oswaldmedium.woff") format("woff");
 	font-display: swap;
 }
+
+:root {
+	--accent-font: "Oswald", "Arial", sans-serif;
+	--main-font: "Arial", sans-serif;
+}

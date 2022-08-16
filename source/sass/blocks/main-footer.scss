@@ -5,28 +5,51 @@
 
 .main-footer__wrapper {
 	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
 	margin: 0 auto;
+
+	@media (--not-mobile) {
+		min-width: 768px;
+	}
 }
 
 .main-footer__social-wrap {
 	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
+
+	@media (--not-mobile) {
+		min-width: 708px;
+		max-width: 1220px;
+		padding: 58px 0;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
+
 .main-footer__social {
-	padding: 22px 0;
+	padding: 22px 20px;
 	border-bottom: 1px solid #d9d9d9;
 
 	&:last-of-type {
 		border-bottom: none;
 	}
+
+	@media (--not-mobile) {
+		border-bottom: none;
+		padding: 0;
+	}
 }
 
 .main-footer__social--home-page {
 	padding: 39px 0 32px;
+
+	@media (--not-mobile) {
+		padding: 0;
+	}
 }

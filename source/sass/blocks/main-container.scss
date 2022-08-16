@@ -22,7 +22,7 @@
 
 .main-container__title {
 	margin: 0 0 37px 0;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 36px;
@@ -32,7 +32,7 @@
 
 .main-container__text {
 	margin: 0 0 39px 0;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -43,7 +43,6 @@
 
 .main-container__text--footnote {
 	text-align: center;
-	font-family: "Arial", sans-serif;
-	font-style: normal;
+	font-family: var(--main-font);
 	line-height: 16px;
 }

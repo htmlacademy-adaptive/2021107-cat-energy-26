@@ -2,6 +2,12 @@
 	padding: 26px 20px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+
+	@media (--not-mobile) {
+		max-width: 768px;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 // Серый фон мобильная версия index
