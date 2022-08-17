@@ -6,7 +6,7 @@
 .main-footer__wrapper {
 	box-sizing: border-box;
 	min-width: 320px;
-	margin: 0 auto;
+	// margin: 0 auto;
 
 	@media (--not-mobile) {
 		min-width: 768px;
@@ -27,11 +27,14 @@
 
 	@media (--not-mobile) {
 		min-width: 708px;
-		max-width: 1220px;
-		padding: 58px 0;
+		padding: 58px 30px;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	@media (--desktop-only) {
+		max-width: 1220px;
 	}
 }
 
