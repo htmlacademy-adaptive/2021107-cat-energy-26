@@ -1,9 +1,28 @@
 
-.contacts__images {
-	display: block;
-	margin: 0 auto;
+.contacts {
+	@media (--desktop-only) {
+		position: relative;
+		width: 1440px;
+	}
 }
 
 .contacts__text {
+	margin: 0 auto;
+
+	@media (--desktop-only) {
+		position: absolute;
+		left: 110px;
+		top: 95px;
+	}
+}
+
+.contacts__images-wrapper {
+	@media (--desktop-only) {
+		margin: 0 auto;
+	}
+}
+
+.contacts__images {
+	display: block;
 	margin: 0 auto;
 }
