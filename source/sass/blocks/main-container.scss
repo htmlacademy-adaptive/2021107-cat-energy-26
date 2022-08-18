@@ -21,6 +21,10 @@
 	@media (--not-mobile) {
 		padding: 64px 30px 0;
 	}
+
+	@media (--desktop-only) {
+		padding: 64px 110px 0;
+	}
 }
 
 
