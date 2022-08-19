@@ -2,16 +2,20 @@
 	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
 	padding: 35px 0 12px;
 	border: none;
+
+	@media (--desktop-only) {
+		grid-column: 1 / -1;
+	}
 }
 
 .contacts-buyer__legend {
 	padding: 26px 22px 0 0;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 26px;
-	color: #000000;
+	color: var(--main-color);
 }
 
 .contacts-buyer__list {
@@ -21,6 +25,11 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 14px;
+
+	@media (--desktop-only) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 78px;
+	}
 }
 
 .contacts-buyer__label {
@@ -30,23 +39,23 @@
 .contacts-buyer__text {
 	margin-right: 10px;
 	align-self: center;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	color: #444444;
+	color: var(--base-color);
 }
 
 .contacts-buyer__input {
 	flex-grow: 1;
 	padding: 14px;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	color: #444444;
+	color: var(--base-color);
 }

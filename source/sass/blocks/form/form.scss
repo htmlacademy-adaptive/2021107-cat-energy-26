@@ -1,7 +1,54 @@
+.form {
+	@media (--desktop-only) {
+		// max-width: 1220px;
+		display: grid;
+		grid-template-columns: 46.5% 1fr;
+		column-gap: 61px;
+	}
+}
+
 .form__parameters {
 	margin: 0;
 }
 
+.form__wrap-sending-data {
+	@media (--not-mobile) {
+		max-width: 1220px;
+		display: grid;
+		grid-template-columns: 44.8% 1fr;
+		column-gap: 61px;
+	}
+
+	@media (--desktop-only) {
+		grid-column: 1 / -1;
+		grid-template-columns: 46.5% 1fr;
+	}
+}
+
 .form__button {
 	margin: 0 auto 21px;
+
+	@media (--not-mobile) {
+		margin: 0;
+		width: 100%;
+		max-width: 568px;
+		padding: 13px 0;
+	}
+}
+
+
+.form__text-footnote {
+	margin: 0;
+	text-align: center;
+	font-family: var(--main-font);
+	line-height: 16px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--main-color);
+
+	@media (--not-mobile) {
+		align-self: center;
+		justify-self: start;
+	}
 }

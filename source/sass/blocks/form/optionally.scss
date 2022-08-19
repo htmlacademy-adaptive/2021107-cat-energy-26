@@ -2,16 +2,20 @@
 	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
 	padding: 34px 0;
 	border: none;
+
+	@media (--desktop-only) {
+		grid-column: 1 / -1;
+	}
 }
 
 .optionally__legend {
 	padding: 10px 22px 0 0;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 26px;
-	color: #000000;
+	color: var(--main-color);
 }
 
 .optionally__list {
@@ -21,14 +25,26 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 15px;
+
+	@media (--not-mobile) {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 280px);
+		column-gap: 60px;
+		row-gap: 32px;
+	}
+
+	@media (--desktop-only) {
+		grid-template-columns: repeat(auto-fit, 221px);
+		column-gap: 104px;
+	}
 }
 
 .optionally__text {
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	color: #000000;
+	color: var(--main-color);
 }

@@ -11,7 +11,8 @@
 {% block main %}
 <main class="main-container">
 	<div class="main-container__wrap main-container__wrap--form">
-		<h1 class="main-container__title">Подбор программы</h1>
+		<div class="main-container__centerer">
+			<h1 class="main-container__title">Подбор программы</h1>
 
 		<p class="main-container__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
 
@@ -93,7 +94,7 @@
 				</div>
 			</div>
 
-			<fieldset class="form__parameters optionally">
+			<fieldset class="form__parameters form__parameters--optionally optionally">
 				<legend class="optionally__legend visible-legend">Дополнительно</legend>
 				<ul class="optionally__list">
 					<li class="optionally__item ">
@@ -124,11 +125,15 @@
 				</ul>
 			</fieldset>
 
-			<button class="form__button button" type="submit">отправить заявку</button>
+			<div class="form__wrap-sending-data">
+				<button class="form__button button" type="submit">отправить заявку</button>
+
+			<p class="form__text-footnote">* — Обязательные поля</p>
+			</div>
 
 		</form>
+		</div>
 
-		<p class="main-container__text main-container__text--footnote">* — Обязательные поля</p>
 	</div>
 
 </main>

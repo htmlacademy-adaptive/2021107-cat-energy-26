@@ -12,7 +12,18 @@
 }
 
 .main-container__wrap--form {
-	padding: 27px 0 0 0;
+	padding: 27px 20px 32px;
+
+	@media (--not-mobile) {
+		padding: 27px 70px 72px;
+	}
+}
+
+.main-container__centerer {
+	@media (--desktop-only) {
+		max-width: 1220px;
+		margin: 0 auto;
+	}
 }
 
 .main-container__wrap--catalog {
@@ -35,7 +46,7 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
-	color: #000000;
+	color: var(--main-color);
 }
 
 .main-container__text {
@@ -46,11 +57,5 @@
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
-	color: #000000;
-}
-
-.main-container__text--footnote {
-	text-align: center;
-	font-family: var(--main-font);
-	line-height: 16px;
+	color: var(--main-color);
 }

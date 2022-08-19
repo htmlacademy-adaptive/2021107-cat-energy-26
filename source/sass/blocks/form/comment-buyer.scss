@@ -1,15 +1,19 @@
 .comment-buyer {
 	padding: 12px 0;
+
+	@media (--desktop-only) {
+		grid-column: 1 / -1;
+	}
 }
 
 .comment-buyer__label {
 	padding-right: 22px;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 26px;
-	color: #000000;
+	color: var(--main-color);
 }
 
 .comment-buyer__textarea-wrapper {
@@ -20,12 +24,12 @@
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px 12px 10px 15px;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	color: #444444;
+	color: var(--base-color);
 	border: 1px solid #e7e7e7;
 }
