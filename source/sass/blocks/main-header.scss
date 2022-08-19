@@ -5,30 +5,31 @@
 
 .main-header__wrapper {
 	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
+	max-width: 1220px;
 	margin: 0 auto;
-	padding: 10px 20px 17px 20px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	padding: 10px 20px 17px;
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	position: relative;
+
+	@media (--not-mobile) {
+		padding: 24px 30px 17px;
+	}
+
+	@media (--desktop-only) {
+		box-sizing: content-box;
+		padding: 10px 110px 17px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
-.main-nav {
-	justify-self: end;
-}
+.main-header__logo-image {
+	margin-right: 57px;
 
-// Временное решение для удобства. Для вызова меню навести курсор на кнопку "main-nav__toggle" и Tab выбирать
-.main-nav__toggle:hover ~ .main-nav__wrapper--modal {
-	display: block;
-}
-
-.main-nav__wrapper--modal {
-	display: none;
-}
-
-.main-nav__list {
-	position: absolute;
-	top: 100%;
-	left: 0;
+	@media (--not-mobile) {
+		margin-right: 12px;
+	}
 }

@@ -1,3 +1,33 @@
+.main-nav {
+	justify-self: end;
+}
+
+.main-nav__toggle {
+	@media (--not-mobile) {
+		display: none;
+	}
+}
+// Временное решение для удобства. Для вызова меню навести курсор на кнопку "main-nav__toggle" и Tab выбирать
+.main-nav__toggle:hover ~ .main-nav__wrapper--modal {
+	display: block;
+}
+
+.main-nav__wrapper--modal {
+	display: none;
+
+	@media (--not-mobile) {
+		display: block;
+	}
+}
+
 .main-nav__list {
 	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	@media (--not-mobile) {
+		position: static;
+		display: flex;
+	}
 }
