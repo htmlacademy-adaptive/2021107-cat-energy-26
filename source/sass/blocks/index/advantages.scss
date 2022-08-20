@@ -1,20 +1,38 @@
 .advantages {
 	background-color: #ffffff;
-	color: #000000;
+	color: var(--main-color);
 }
 
 .advantages__wrapper {
 	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
 	margin: 0 auto;
 	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@media (--not-mobile) {
+		padding: 0 30px;
+	}
+
+	@media (--desktop-only) {
+		box-sizing: content-box;
+		max-width: 1220px;
+		padding: 0 110px;
+	}
 }
 
 .advantages-present {
 	margin-bottom: 20px;
+}
+
+.advantages__card-wrapper {
+	@media (--desktop-only) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 80px;
+	}
 }
 
 .advantages__card {

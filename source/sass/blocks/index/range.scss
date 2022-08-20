@@ -1,0 +1,11 @@
+.range {
+	display: flex;
+	justify-content: center;
+}
+
+.range__range-bar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #000000;
+}
