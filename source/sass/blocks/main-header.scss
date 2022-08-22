@@ -1,28 +1,27 @@
 .main-header {
 	background-color: #ffffff;
-	color: #000000;
 }
 
 .main-header__wrapper {
 	box-sizing: border-box;
-	min-width: 320px;
-	max-width: 1220px;
-	margin: 0 auto;
-	padding: 10px 20px 17px;
+	// min-width: 320px;
+	// padding: 10px 20px 17px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
 
 	@media (--not-mobile) {
-		padding: 24px 30px 17px;
+		// padding: 24px 30px 17px;
 	}
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
-		padding: 10px 110px 17px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		// padding: 10px 110px 17px;
+		// display: grid;
+		// grid-template-columns: 1fr 1fr;
+		display: flex;
 	}
 }
 

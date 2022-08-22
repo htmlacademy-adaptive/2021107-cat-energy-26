@@ -6,20 +6,20 @@
 .advantages__wrapper {
 	box-sizing: border-box;
 	min-width: 320px;
-	margin: 0 auto;
-	padding: 0 20px;
+	// margin: 0 auto;
+	// padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	@media (--not-mobile) {
-		padding: 0 30px;
+		// padding: 0 30px;
 	}
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
-		max-width: 1220px;
-		padding: 0 110px;
+		// max-width: 1220px;
+		// padding: 0 110px;
 	}
 }
 
