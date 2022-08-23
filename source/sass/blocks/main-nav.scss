@@ -3,13 +3,21 @@
 }
 
 .main-nav__toggle {
+	width: 24px;
+	height: 16px;
+	padding: 0;
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+
+	// 	&:hover,
+	//   &:active {
+	//     background-color: #624530;
+	//   }
+
 	@media (--not-mobile) {
 		display: none;
 	}
-}
-// Временное решение для удобства. Для вызова меню навести курсор на кнопку "main-nav__toggle" и Tab выбирать
-.main-nav__toggle:hover ~ .main-nav__wrapper--modal {
-	display: block;
 }
 
 .main-nav__wrapper--modal {
