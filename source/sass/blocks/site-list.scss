@@ -1,18 +1,17 @@
 .site-list {
 	padding: 0;
 	list-style-type: none;
-	box-sizing: border-box;
-	width: 320px;
+	min-width: 320px;
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
 	color: var(--main-color);
-	// flex-wrap: wrap;
 	align-items: center;
 
 	@media (--not-mobile) {
 		width: 100%;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
@@ -24,9 +23,10 @@
 
 .site-list__item {
 	width: 100%;
+	box-sizing: border-box;
 	padding: 4px;
-	border-top: 1px solid #e6e6e6;
-	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid var(--border-nav);
+	// border-bottom: 1px solid #e6e6e6;
 
 	@media (--not-mobile) {
 		border: none;
