@@ -14,15 +14,15 @@
 	position: relative;
 
 	@media (--not-mobile) {
-		// padding: 24px 30px 17px;
+		padding: 24px 0 64px;
 	}
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
 		// padding: 10px 110px 17px;
-		// display: grid;
-		// grid-template-columns: 1fr 1fr;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		// display: flex;
 	}
 }
 

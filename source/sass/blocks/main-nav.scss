@@ -1,7 +1,11 @@
 .main-nav {
 	height: 100%;
 	justify-self: end;
-	position: relative;
+
+	@media (--desktop-only) {
+		width: 100%;
+		background-color: #68b738;
+	}
 }
 
 .main-nav__toggle {
@@ -25,9 +29,9 @@
 .main-nav--closed .main-nav__toggle::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 50%;
+	margin-top: -8px;
 	right: 0;
-	bottom: 0;
 	width: 24px;
 	height: 1.5px;
 	background-color: var(--main-color);
@@ -52,9 +56,9 @@
 	&::after {
 		content: "";
 		position: absolute;
-		top: 33.33%;
+		top: 50%;
+		margin-top: -8px;
 		right: 0;
-		bottom: 0;
 		width: 24px;
 		height: 1.5px;
 		background-color: var(--main-color);
@@ -71,22 +75,19 @@
 }
 
 .main-nav__wrapper--modal {
+	width: 100%;
 	position: absolute;
-	top: 181%;
-	right: -1px;
+	top: 100%;
+	left: 0;
+	z-index: 10;
 
 	@media (--not-mobile) {
 		position: static;
-		// top: 0;
-		// right: 0;
 	}
 }
 
 .main-nav__list {
 	margin: 0;
-	// position: absolute;
-	// top: 100%;
-	// left: 0;
 
 	@media (--not-mobile) {
 		position: static;
