@@ -3,10 +3,6 @@
 	justify-content: space-between;
 	align-items: center;
 	text-decoration: none;
-
-	@media (--not-mobile) {
-		width: 163px;
-	}
 }
 
 .copyright__text {
@@ -14,8 +10,13 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
-	color: #444444;
+	line-height: 1.13;
+	color: var(--base-color);
+
+
+	@media (--not-mobile) {
+		margin-right: 22px;
+	}
 }
 
 .copyright__image {

@@ -7,8 +7,6 @@
 }
 
 .contacts__text {
-	// margin: 0 auto;
-
 	@media (--desktop-only) {
 		position: absolute;
 		left: 110px;
@@ -16,13 +14,24 @@
 	}
 }
 
-.contacts__images-wrapper {
+.contacts__map-wrapper {
+	& iframe {
+		border: none;
+	}
+
 	@media (--desktop-only) {
 		margin: 0 auto;
 	}
 }
 
-.contacts__images {
+.contacts__map {
+	border: none;
 	display: block;
 	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+
+	@media (--not-mobile) {
+		height: 400px;
+	}
 }

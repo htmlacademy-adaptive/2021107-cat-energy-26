@@ -1,16 +1,20 @@
 .statistics {
-	background-color: #eaeaea;
+	background-color: var(--statistics-background);
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		background-color: var(--main-background);
+	}
 }
 
 .statistics__wrapper {
 	// box-sizing: border-box;
 	// min-width: 320px;
 	// margin: 0 auto;
-	// padding: 66px 20px 40px;
+	padding: 25px 0 40px;
 
 	@media (--not-mobile) {
-		// padding: 66px 30px 40px;
+		padding: 43px 0 100px;
 	}
 
 	@media (--desktop-only) {
@@ -31,9 +35,15 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 36px;
-	line-height: 40px;
+	line-height: 1.11;
 	text-align: left;
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		margin: 0 0 63px;
+		font-size: 60px;
+		line-height: 1;
+	}
 }
 
 .statistics__description {
@@ -42,15 +52,27 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 1.29;
 	color: var(--base-color);
+
+	@media (--not-mobile) {
+		margin: 0 0 54px;
+		font-size: 16px;
+		line-height: 1.5;
+	}
 }
 
 .statistics__example {
-	margin: 0;
+	margin: 0 0 20px;
+
+	@media (--not-mobile) {
+		margin: 0 0 251px;
+	}
 }
 
 .statistics__images-wrapper {
+	position: relative;
+
 	@media (--desktop-only) {
 		grid-row: 1 / -1;
 		grid-column: -1 / -2;
@@ -62,3 +84,9 @@
 	margin: 0 auto;
 	display: block;
 }
+
+// .statistics__range {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// }

@@ -4,8 +4,32 @@
 }
 
 .range__range-bar {
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background-color: #666666;
+	border-radius: 2px;
+}
+
+.range__range-toggle {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	border: 1px solid #000000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	// &::before {
+	// 	content: "";
+	// 	width: 4px;
+	// 	height: 100%;
+	// 	background-color: #666666;
+	// 	border-radius: 2px;
+	// 	z-index: 2;
+	// }
 }
