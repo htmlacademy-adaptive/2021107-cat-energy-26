@@ -51,6 +51,7 @@
 		grid-template-columns: repeat(auto-fit, 250px);
 		row-gap: 37px;
 		column-gap: 137px;
+		counter-reset: section;
 	}
 
 	@media (--desktop-only) {
@@ -74,7 +75,37 @@
 	}
 
 	@media (--not-mobile) {
-		padding: 151px 0 0;
+		padding: 151px 0 57px;
+		font-size: 16px;
+		line-height: 1.5;
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 80px;
+			height: 80px;
+			border: dashed 1px #000000;
+		}
+
+		&::after {
+			counter-increment: section;
+			content: counter(section) "";
+			position: absolute;
+			top: 0;
+			left: 129px;
+			font-family: var(--accent-font);
+			font-style: normal;
+			font-weight: 400;
+			font-size: 280px;
+			line-height: 1;
+			text-align: center;
+			color: #f2f2f2;
+			z-index: -1;
+		}
 	}
 
 	@media (--desktop-only) {

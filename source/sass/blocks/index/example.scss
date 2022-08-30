@@ -13,8 +13,9 @@
 	@media (--desktop-only) {
 		padding-left: 110px;
 		display: grid;
-		grid-template-rows: auto 100%;
+		grid-template-rows: auto auto;
 		row-gap: 75px;
+		grid-template-columns: 162px 162px 1fr;
 	}
 }
 
@@ -65,6 +66,7 @@
 		margin: 0;
 		height: 100%;
 		display: flex;
+		justify-content: start;
 		text-align: left;
 	}
 }

@@ -17,17 +17,50 @@
 }
 
 .button--advantages {
-	display: inline;
-	padding: 4px 47px 4px 0;
+	display: inline-block;
+	width: auto;
+	padding: 4px 49px 4px 0;
 	font-family: var(--accent-font);
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 1;
 	color: var(--main-color);
 	background-color: transparent;
+	text-align: start;
+	position: relative;
+
+	@media (--not-mobile) {
+		padding: 4px 57px 4px 0;
+	}
+
+	@media (--desktop-only) {
+		padding-right: 60px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		width: 18px;
+		height: 9px;
+		border: dashed 1px #000000;
+	}
 }
 
 .button.button--advantages {
+	margin: 15px 0 18px;
+
 	@media (--not-mobile) {
-		position: static;
+		position: relative;
+		left: auto;
+		top: auto;
+		margin: 0;
+		margin-bottom: 53px;
+	}
+
+	@media (--desktop-only) {
+		margin-bottom: 59px;
 	}
 }

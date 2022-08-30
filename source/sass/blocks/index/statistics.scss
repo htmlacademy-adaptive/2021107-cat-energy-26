@@ -31,7 +31,8 @@
 		width: auto;
 		margin: 0;
 		grid-row: 1 / -1;
-		padding: 0;
+		padding: 0 0 75px;
+		background-color: var(--footer-background);
 		// box-sizing: content-box;
 		// max-width: 1220px;
 		// padding: 66px 110px 40px;
@@ -60,10 +61,10 @@
 	}
 
 	@media (--desktop-only) {
-		margin-bottom: 76px;
-		padding-left: 110px;
+		padding: 0 0 76px 110px;
 		font-size: 60px;
 		line-height: 1;
+		background-color: var(--main-background);
 	}
 }
 
@@ -84,6 +85,7 @@
 
 	@media (--desktop-only) {
 		margin: 0;
+		max-width: 500px;
 		padding: 0 0 70px 110px;
 		font-size: 16px;
 		line-height: 1.5;
