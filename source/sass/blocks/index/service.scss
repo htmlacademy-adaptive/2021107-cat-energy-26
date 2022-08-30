@@ -32,6 +32,12 @@
 	font-size: 36px;
 	line-height: 1.11;
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		margin-bottom: 32px;
+		font-size: 60px;
+		line-height: 1;
+	}
 }
 
 .service__list {
@@ -68,7 +74,7 @@
 	}
 
 	@media (--not-mobile) {
-		padding: 111px 0 0;
+		padding: 151px 0 0;
 	}
 
 	@media (--desktop-only) {
