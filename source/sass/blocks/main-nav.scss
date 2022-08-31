@@ -57,7 +57,7 @@
 		content: "";
 		position: absolute;
 		top: 50%;
-		margin-top: -8px;
+		margin-top: -2px;
 		right: 0;
 		width: 24px;
 		height: 1.5px;
@@ -75,13 +75,14 @@
 }
 
 .main-nav__wrapper--modal {
-	width: 100%;
+	width: 114%;
 	position: absolute;
 	top: 100%;
-	left: 0;
+	left: -7%;
 	z-index: 10;
 
 	@media (--not-mobile) {
+		width: auto;
 		position: static;
 	}
 }

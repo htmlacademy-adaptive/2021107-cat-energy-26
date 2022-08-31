@@ -6,8 +6,7 @@
 .advantages__wrapper {
 	box-sizing: border-box;
 	min-width: 320px;
-	// margin: 0 auto;
-	// padding: 0 20px;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -23,8 +22,12 @@
 	}
 }
 
-.advantages-present {
+.advantages__present {
 	margin-bottom: 20px;
+
+	@media (--not-mobile) {
+		margin-bottom: -10px;
+	}
 }
 
 .advantages__card-wrapper {
@@ -37,4 +40,23 @@
 
 .advantages__card {
 	margin-bottom: 20px;
+
+	@media (--not-mobile) {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.advantages__button {
+	margin: 0 auto;
+
+	@media (--not-mobile) {
+		width: 244px;
+		position: absolute;
+		left: 90px;
+		top: 30.2%;
+	}
 }

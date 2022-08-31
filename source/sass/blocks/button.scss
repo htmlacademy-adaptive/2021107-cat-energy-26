@@ -14,6 +14,12 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
+
+	@media (--not-mobile) {
+		padding: 17px 26px;
+		font-size: 20px;
+		line-height: 1;
+	}
 }
 
 .button--advantages {
@@ -30,6 +36,8 @@
 
 	@media (--not-mobile) {
 		padding: 4px 57px 4px 0;
+		font-size: 20px;
+		line-height: 1.5;
 	}
 
 	@media (--desktop-only) {
@@ -46,6 +54,14 @@
 		width: 23px;
 		height: 9px;
 		border: dashed 1px #000000;
+
+		@media (--not-mobile) {
+			right: 86px;
+		}
+	}
+
+	@media (--desktop-only) {
+		right: 86px;
 	}
 }
 

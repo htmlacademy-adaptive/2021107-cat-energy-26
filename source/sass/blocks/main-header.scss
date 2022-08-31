@@ -1,34 +1,45 @@
 .main-header {
-	background-color: #ffffff;
+	background-color: var(--main-background);
 }
 
 .main-header__wrapper {
 	min-height: 65px;
-	// box-sizing: border-box;
-	// min-width: 320px;
-	// padding: 10px 0 17px;
 	display: flex;
 	flex-wrap: wrap;
-	// align-items: center;
 	justify-content: space-between;
 	position: relative;
 
 	@media (--not-mobile) {
-		padding: 24px 0 64px;
+		position: static;
+		align-items: center;
+		padding: 23px 0 26px;
 	}
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
-		// padding: 10px 110px 17px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		// display: flex;
 	}
 }
 
 .main-header__logo {
 	display: flex;
 	align-items: center;
+
+	// Временное решение
+	@media (--not-mobile) {
+		width: 174px;
+		height: 52px;
+		border: dashed 1px #000000;
+	}
+	// Временное решение
+}
+
+// Временное решение
+.main-header__logo img {
+	@media (--not-mobile) {
+		display: none;
+	}
 }
 
 .main-header__logo-image {

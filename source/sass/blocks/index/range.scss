@@ -15,7 +15,9 @@
 	border-radius: 2px;
 
 	@media (--not-mobile) {
+		height: 111%;
 		top: 20%;
+		transform: translate(-50%, -47%);
 	}
 
 	// @media (--desktop-only) {

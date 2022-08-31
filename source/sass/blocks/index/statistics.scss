@@ -81,6 +81,10 @@
 		margin: 0 0 54px;
 		font-size: 16px;
 		line-height: 1.5;
+
+		& span {
+			white-space: nowrap;
+		}
 	}
 
 	@media (--desktop-only) {
@@ -92,6 +96,7 @@
 		background-color: var(--footer-background);
 	}
 }
+
 
 .statistics__example {
 	margin: 0;

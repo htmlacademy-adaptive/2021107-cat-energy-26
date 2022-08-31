@@ -11,7 +11,7 @@
 		width: 100%;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 
 
@@ -45,7 +45,7 @@
 
 .site-list__link {
 	display: block;
-	padding: 22px 0 24px;
+	padding: 22px 0 23px;
 	text-decoration: none;
 	font-family: var(--accent-font);
 	font-style: normal;
