@@ -62,7 +62,8 @@
 
 .service__item {
 	margin-bottom: 20px;
-	padding-left: 100px;
+	min-height: 60px;
+	padding-left: 80px;
 	font-family: var(--main-font);
 	font-style: normal;
 	font-weight: 400;

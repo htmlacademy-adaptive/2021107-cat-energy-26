@@ -3,13 +3,13 @@
 	box-sizing: border-box;
 	width: 280px;
 	padding: 11px 44px;
-	background-color: #68b738;
-	color: #ffffff;
+	background-color: var(--button-backgroud);
+	color: var(--main-background);
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 1.29;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -39,11 +39,11 @@
 	&::before {
 		content: "";
 		position: absolute;
-		right: 0;
+		right: 8px;
 		top: 0;
 		bottom: 0;
 		margin: auto 0;
-		width: 18px;
+		width: 23px;
 		height: 9px;
 		border: dashed 1px #000000;
 	}
@@ -62,5 +62,6 @@
 
 	@media (--desktop-only) {
 		margin-bottom: 59px;
+		width: auto;
 	}
 }

@@ -24,8 +24,8 @@
 	width: 124px;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 34px;
-	padding: 14px 20px;
+	margin-bottom: 37px;
+	padding: 13px 20px 14px;
 	position: relative;
 	border: 1px solid var(--example-border);
 	border-radius: 3px;
@@ -72,9 +72,9 @@
 }
 
 .example__description {
-	width: 87px;
+	width: 82px;
 	position: absolute;
-	top: 80%;
+	top: 89%;
 	z-index: 2;
 	background-color: var(--statistics-background);
 	font-family: var(--main-font);
