@@ -1,6 +1,10 @@
 .service {
 	background-color: var(--main-background);
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		border-bottom: 1px solid var(--border-nav);
+	}
 }
 
 .service__wrapper {
@@ -9,7 +13,7 @@
 	padding: 0 0 49px;
 
 	@media (--not-mobile) {
-		padding-top: 46px;
+		padding: 46px 0 45px;
 	}
 
 	@media (--desktop-only) {
@@ -49,8 +53,8 @@
 	@media (--not-mobile) {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 250px);
-		row-gap: 37px;
-		column-gap: 137px;
+		row-gap: 39px;
+		column-gap: 134px;
 		counter-reset: section;
 	}
 
