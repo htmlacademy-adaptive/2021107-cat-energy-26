@@ -28,10 +28,15 @@
 	@media (--not-mobile) {
 		margin-bottom: -10px;
 	}
+
+	@media (--desktop-only) {
+		margin-bottom: -156px;
+	}
 }
 
 .advantages__card-wrapper {
 	@media (--desktop-only) {
+		padding-left: 18px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 80px;
@@ -48,6 +53,12 @@
 			margin-bottom: 0;
 		}
 	}
+
+	@media (--not-mobile) {
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
 }
 
 .advantages__button {
@@ -58,5 +69,10 @@
 		position: absolute;
 		left: 90px;
 		top: 30.2%;
+	}
+
+	@media (--desktop-only) {
+		left: 88px;
+		top: 39.2%;
 	}
 }

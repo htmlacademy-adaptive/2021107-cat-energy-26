@@ -17,14 +17,7 @@
 	}
 
 	@media (--desktop-only) {
-		// box-sizing: content-box;
-		// max-width: 1220px;
-		// padding: 0 110px 49px;
-		// display: grid;
-		// grid-template-columns: 440px 560px;
-		// column-gap: 224px;
-		// grid-template-rows: repeat(3, auto);
-		// row-gap: 70px;
+		padding: 42px 0 0 17px;
 	}
 }
 
@@ -41,6 +34,10 @@
 		margin-bottom: 32px;
 		font-size: 60px;
 		line-height: 1;
+	}
+
+	@media (--desktop-only) {
+		margin-bottom: 30px;
 	}
 }
 
@@ -61,6 +58,7 @@
 	@media (--desktop-only) {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		column-gap: 74px;
 	}
 }
 

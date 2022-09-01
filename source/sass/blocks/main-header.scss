@@ -17,6 +17,7 @@
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
+		padding: 53px 0 29px 18px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -32,6 +33,12 @@
 		height: 52px;
 		border: dashed 1px #000000;
 	}
+
+	@media (--desktop-only) {
+		width: 202px;
+		height: 59px;
+	}
+
 	// Временное решение
 }
 
