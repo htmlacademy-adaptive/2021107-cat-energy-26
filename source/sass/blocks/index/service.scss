@@ -1,6 +1,10 @@
 .service {
 	background-color: var(--main-background);
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		border-bottom: 1px solid var(--border-nav);
+	}
 }
 
 .service__wrapper {
