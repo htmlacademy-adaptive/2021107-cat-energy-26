@@ -1,23 +1,14 @@
 .advantages-present {
-	// padding: 27px 20px 0;
-
-	@media (--not-mobile) {
-		// width: 100%;
-		// padding: 0 0 0 87px;
-		position: relative;
-	}
-
-	@media (--not-mobile) {
-		// padding: 0 0 0 80px;
-	}
-}
-
-.advantages-present--mobile {
 	position: relative;
 	z-index: 1;
 
 	@media (--not-mobile) {
 		background-image: none;
+		position: relative;
+	}
+
+	@media (--not-mobile) {
+		// padding: 0 0 0 80px;
 	}
 
 	&::before {
@@ -52,6 +43,10 @@
 		@media (--not-mobile) {
 			display: none;
 		}
+
+		// @media (--not-mobile) {
+		// 	display: inline-block;
+		// }
 	}
 }
 

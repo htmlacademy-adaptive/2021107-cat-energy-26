@@ -2,6 +2,40 @@
 	background-color: var(--main-background);
 }
 
+.main-header--background {
+	@media (--desktop-only) {
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50.6%;
+			margin: 0 auto;
+			// width: 703px;
+			width: 49.4%;
+			max-width: 720px;
+			height: 663px;
+			background-image: url("../../../img/advantages-index-logo@1x.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50.6%;
+			width: 49.4%;
+			max-width: 720px;
+			height: 694px;
+			background-color: rgba(104, 183, 56, 0.85);
+			z-index: -1;
+		}
+	}
+}
+
 .main-header__wrapper {
 	min-height: 65px;
 	display: flex;

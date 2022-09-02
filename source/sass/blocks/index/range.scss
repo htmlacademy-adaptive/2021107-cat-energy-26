@@ -20,9 +20,11 @@
 		transform: translate(-50%, -47%);
 	}
 
-	// @media (--desktop-only) {
-	// 	top: 50%;
-	// }
+	@media (--desktop-only) {
+		top: 22%;
+		left: 48%;
+		transform: translate(-123%, -46%);
+	}
 }
 
 .range__range-toggle {

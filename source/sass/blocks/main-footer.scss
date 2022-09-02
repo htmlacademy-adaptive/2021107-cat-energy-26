@@ -31,8 +31,7 @@
 	}
 
 	@media (--desktop-only) {
-		// box-sizing: content-box;
-		// max-width: 1220px;
+		padding: 42px 0 33px 15px;
 	}
 }
 
@@ -48,6 +47,10 @@
 	@media (--not-mobile) {
 		border-bottom: none;
 		padding: 0;
+	}
+
+	@media (--desktop-only) {
+		padding-left: 28px;
 	}
 }
 

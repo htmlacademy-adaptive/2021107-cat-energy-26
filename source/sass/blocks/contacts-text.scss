@@ -14,10 +14,10 @@
 	@media (--desktop-only) {
 		box-sizing: border-box;
 		width: 565px;
-		padding: 56px 80px;
+		padding: 58px 80px 62px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 75px;
+		column-gap: 93px;
 		background-color: var(--main-background);
 	}
 }
