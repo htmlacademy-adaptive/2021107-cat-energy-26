@@ -1,5 +1,9 @@
 .social {
 	padding-bottom: 18px;
+
+	@media (--not-mobile) {
+		padding: 0;
+	}
 }
 
 .social__list {

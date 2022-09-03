@@ -36,7 +36,6 @@
 
 .advantages__card-wrapper {
 	@media (--desktop-only) {
-		padding-left: 18px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 80px;
@@ -72,7 +71,8 @@
 	}
 
 	@media (--desktop-only) {
-		left: 88px;
+		width: 242px;
+		left: 81px;
 		top: 39.2%;
 	}
 }

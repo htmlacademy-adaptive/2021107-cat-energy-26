@@ -50,14 +50,14 @@
 	color: var(--main-color);
 
 	@media (--not-mobile) {
-		margin: 0 0 63px;
+		margin: 0 0 64px;
 		font-size: 60px;
 		line-height: 1;
 	}
 
 	@media (--desktop-only) {
 		margin-bottom: 70px;
-		padding: 68px 0 77px 110px;
+		padding: 72px 0 77px 110px;
 		font-size: 60px;
 		line-height: 1;
 		background-color: var(--main-background);
@@ -87,7 +87,7 @@
 		margin: 0;
 		max-width: 437px;
 		padding: 0 0 70px 110px;
-		font-size: 16px;
+		// font-size: 13px;
 		line-height: 1.5;
 		background-color: var(--footer-background);
 	}

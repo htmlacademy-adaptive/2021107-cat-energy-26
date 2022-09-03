@@ -10,12 +10,12 @@
 			content: "";
 			position: absolute;
 			top: 0;
-			left: 50.6%;
+			left: 50%;
 			margin: 0 auto;
 			// width: 703px;
-			width: 49.4%;
-			max-width: 720px;
-			height: 663px;
+			// width: 50%;
+			width: 720px;
+			height: 694px;
 			background-image: url("../../../img/advantages-index-logo@1x.png");
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -26,8 +26,8 @@
 			content: "";
 			position: absolute;
 			top: 0;
-			left: 50.6%;
-			width: 49.4%;
+			left: 50%;
+			width: 50%;
 			max-width: 720px;
 			height: 694px;
 			background-color: rgba(104, 183, 56, 0.85);
@@ -51,10 +51,9 @@
 
 	@media (--desktop-only) {
 		box-sizing: content-box;
-		padding: 53px 0 29px 18px;
+		padding: 53px 0 29px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		// align-items: baseline;
 	}
 }
 
