@@ -90,6 +90,10 @@
 .button--product-card {
 	font-size: 16px;
 	// line-height: 1.25px;
+
+	@media (--not-mobile) {
+		padding: 13px 26px 11px;
+	}
 }
 
 .button--product-card-all {

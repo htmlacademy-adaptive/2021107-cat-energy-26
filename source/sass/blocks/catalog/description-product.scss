@@ -8,10 +8,30 @@
 	line-height: 16px;
 	text-align: center;
 	color: var(--basecolor);
+
+	@media (--not-mobile) {
+		row-gap: 16px;
+		font-size: 16px;
+		line-height: 1;
+	}
 }
 
 .description-product__description {
 	justify-self: start;
+
+	@media (--not-mobile) {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 250px;
+			height: 1px;
+			left: 0;
+			bottom: -7px;
+			background-color: var(--example-border);
+		}
+	}
 }
 
 .description-product__quantity {
@@ -19,6 +39,11 @@
 	justify-self: end;
 	font-size: 12px;
 	line-height: 1.33;
+
+	@media (--not-mobile) {
+		font-size: 16px;
+		line-height: 1;
+	}
 }
 
 .description-product__quantity--additional {
