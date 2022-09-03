@@ -81,7 +81,7 @@
 		padding-top: 15px;
 		font-size: 20px;
 		line-height: 1.5;
-		color: var(--main-background);
+		color: var(--main-color);
 
 		&[aria-current="page"]::before {
 			content: "";
@@ -90,6 +90,16 @@
 			bottom: 0;
 			width: 100%;
 			height: 2px;
+			background-color: var(--button-backgroud);
+		}
+	}
+}
+
+.site-list__link--light {
+	@media (--desktop-only) {
+		color: var(--main-background);
+
+		&[aria-current="page"]::before {
 			background-color: var(--main-background);
 		}
 	}

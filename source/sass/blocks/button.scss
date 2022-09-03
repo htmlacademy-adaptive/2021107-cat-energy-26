@@ -86,3 +86,20 @@
 		left: 0;
 	}
 }
+
+.button--product-card {
+	font-size: 16px;
+	// line-height: 1.25px;
+}
+
+.button--product-card-all {
+	padding: 11px 0 8px;
+	background-color: var(--footer-background);
+	color: var(--base-color);
+}
+
+.button--product-card-additional {
+	padding: 10px 44px;
+	font-size: 16px;
+	line-height: 1.25;
+}

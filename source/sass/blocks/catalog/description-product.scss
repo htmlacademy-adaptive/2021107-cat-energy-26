@@ -1,13 +1,13 @@
 .description-product {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	font-family: "Arial", sans-serif;
+	font-family: var(--main-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 16px;
 	text-align: center;
-	color: #444444;
+	color: var(--basecolor);
 }
 
 .description-product__description {
@@ -17,8 +17,18 @@
 .description-product__quantity {
 	margin: 0;
 	justify-self: end;
+	font-size: 12px;
+	line-height: 1.33;
 }
 
 .description-product__quantity--additional {
 	justify-self: start;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.description-product__quantity--additional-end {
+	justify-self: end;
+	font-size: 14px;
+	line-height: 1;
 }
