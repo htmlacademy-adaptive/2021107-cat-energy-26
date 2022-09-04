@@ -26,7 +26,7 @@
 }
 
 .form__button {
-	margin: 0 auto 21px;
+	margin: 0 auto 29px;
 
 	@media (--not-mobile) {
 		margin: 0;
@@ -39,13 +39,14 @@
 
 .form__text-footnote {
 	margin: 0;
-	text-align: center;
 	font-family: var(--main-font);
-	line-height: 16px;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 1.14px;
+	text-align: center;
 	color: var(--main-color);
+
 
 	@media (--not-mobile) {
 		align-self: center;

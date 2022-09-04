@@ -1,0 +1,15 @@
+.visible-legend {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 54%;
+		left: 100%;
+		width: 1000%;
+		height: 2px;
+		background-color: var(--button-backgroud);
+		z-index: -1;
+	}
+}

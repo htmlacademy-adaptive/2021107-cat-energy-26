@@ -2,6 +2,9 @@
 .main-container {
 	flex-grow: 1;
 	background-color: var(--main-background);
+	// Сспорное св-во, используется для формы
+	overflow-x: hidden;
+
 
 	@media (--desktop-only) {
 		overflow-x: hidden;
@@ -31,7 +34,7 @@
 }
 
 .main-container__wrap--form {
-	padding: 27px 0 32px;
+	padding: 28px 0 39px;
 
 	@media (--not-mobile) {
 		padding: 27px 40px 72px;
@@ -71,8 +74,12 @@
 	}
 }
 
+.main-container__title--form {
+	margin-bottom: 38px;
+}
+
 .main-container__text {
-	margin: 0 0 39px 0;
+	margin: 0 0 15px;
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;

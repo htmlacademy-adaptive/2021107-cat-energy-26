@@ -1,7 +1,18 @@
 .effect {
-	padding: 22px 0 20px;
+	padding: 24px 0 17px;
 	border: none;
-	border-bottom: 1px solid #d9d9d9;
+
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: calc(100% + 40px);
+		height: 1px;
+		bottom: 0;
+		left: -20px;
+		background-color: var(--footer-border);
+	}
 }
 
 .effect__list {
@@ -13,12 +24,49 @@
 	row-gap: 13px;
 }
 
+// .effect__item {
+// 	min-height: 30px;
+// }
+
+.effect__label {
+	display: block;
+	min-height: 30px;
+	padding-left: 45px;
+	position: relative;
+}
+
+
+.effect__control-mark {
+	position: absolute;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid var(--example-border);
+}
+
+.effect__input:checked + .effect__control-mark::before {
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	width: 13.5px;
+	height: 13.5px;
+	border-radius: 50%;
+	background-color: var(--button-backgroud);
+}
+
+
 .effect__text {
-	font-family: "Oswald", "Arial", sans-serif;
+	vertical-align: middle;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 1.12px;
 	text-transform: uppercase;
 	color: #222222;
 }

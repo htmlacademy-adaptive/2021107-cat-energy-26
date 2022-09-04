@@ -1,6 +1,6 @@
 .contacts-buyer {
 	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
-	padding: 35px 0 12px;
+	padding: 33px 0 11px;
 	border: none;
 
 	@media (--desktop-only) {
@@ -16,6 +16,7 @@
 	font-size: 24px;
 	line-height: 26px;
 	color: var(--main-color);
+	background-color: var(--main-background);
 }
 
 .contacts-buyer__list {
@@ -43,19 +44,38 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 1.12;
 	text-transform: uppercase;
 	color: var(--base-color);
 }
 
+.contacts-buyer__wrap-input {
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		right: 15px;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		border: 1px solid #000000;
+	}
+}
+
 .contacts-buyer__input {
 	flex-grow: 1;
-	padding: 14px;
+	padding: 15px 45px 12px 14px;
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 1.12;
 	text-transform: uppercase;
 	color: var(--base-color);
+	border: 1px solid #e7e7e7;
 }

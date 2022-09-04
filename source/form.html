@@ -12,7 +12,7 @@
 <main class="main-container">
 	<div class="main-container__wrap main-container__wrap--form page__centerer">
 		<div class="main-container__centerer">
-			<h1 class="main-container__title">Подбор программы</h1>
+			<h1 class="main-container__title main-container__title--form">Подбор программы</h1>
 
 		<p class="main-container__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
 
@@ -48,19 +48,21 @@
 				<ul class="effect__list">
 					<li class="effect__item ">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="slim" checked>
+							<input class="visually-hidden effect__input" type="radio" name="effect" value="slim" checked>
+							<span class="effect__control-mark"></span>
 							<span class="effect__text">похудение</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="overweight">
+							<input class="visually-hidden effect__input" type="radio" name="effect" value="overweight">
+							<span class="effect__control-mark"></span>
 							<span class="effect__text">Набор массы</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="effect__input" type="radio" name="effect" value="suspense">
+							<input class="visually-hidden effect__input" type="radio" name="effect" value="suspense"><span class="effect__control-mark"></span>
 							<span class="effect__text">Не знаю (Нужен ваш совет)</span>
 						</label>
 					</li>
@@ -74,13 +76,15 @@
 					<li class="contacts-buyer__item ">
 						<label class="contacts-buyer__label">
 							<span class="contacts-buyer__text">E-mail:*</span>
-							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+							</span>
 						</label>
 					</li>
 					<li class="contacts-buyer__item">
 						<label class="contacts-buyer__label type-radio">
 							<span class="contacts-buyer__text">Телефон:*</span>
-							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+							</span>
 						</label>
 					</li>
 
@@ -99,25 +103,31 @@
 				<ul class="optionally__list">
 					<li class="optionally__item ">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked>
+							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked>
+							<span class="optionally__control-mark"></span>
 							<span class="optionally__text">сахарозаменитель</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label ttype-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="water">
+							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="water">
+							<span class="optionally__control-mark"></span>
+
 							<span class="optionally__text">питьевая вода</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="milk">
+							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="milk">
+							<span class="optionally__control-mark"></span>
 							<span class="optionally__text">молоко</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="optionally__input" type="checkbox" name="optionally" value="vitamins">
+							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="vitamins">
+							<span class="optionally__control-mark"></span>
+
 							<span class="optionally__text">витамины</span>
 						</label>
 					</li>
@@ -126,7 +136,7 @@
 			</fieldset>
 
 			<div class="form__wrap-sending-data">
-				<button class="form__button button" type="submit">отправить заявку</button>
+				<button class="form__button button button--form" type="submit">отправить заявку</button>
 
 			<p class="form__text-footnote">* — Обязательные поля</p>
 			</div>
