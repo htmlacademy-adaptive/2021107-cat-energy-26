@@ -8,6 +8,20 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: rgba(104, 183, 56, 0.85);
+
+	@media (--not-mobile) {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 80px;
+			height: 83px;
+			top: 54px;
+			left: 77px;
+			border: 1px solid #000000;
+		}
+	}
 }
 
 .stock__advantages {

@@ -16,6 +16,13 @@
 	}
 }
 
+.description-product--additional {
+	@media (--not-mobile) {
+		grid-template-columns: repeat(2, auto) 93px;
+		padding-top: 3px;
+	}
+}
+
 .description-product__description {
 	justify-self: start;
 
@@ -50,10 +57,22 @@
 	justify-self: start;
 	font-size: 14px;
 	line-height: 1;
+
+	@media (--not-mobile) {
+		grid-column: 2 / 3;
+		justify-self: end;
+		font-size: 16px;
+		line-height: 1.25;
+	}
 }
 
 .description-product__quantity--additional-end {
 	justify-self: end;
 	font-size: 14px;
 	line-height: 1;
+
+	@media (--not-mobile) {
+		font-size: 16px;
+		line-height: 1.25;
+	}
 }

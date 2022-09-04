@@ -1,6 +1,9 @@
 .additional-product {
 	padding-top: 25px;
 
+	@media (--not-mobile) {
+		padding-top: 68px;
+	}
 
 	@media (--desktop-only) {
 		display: grid;
@@ -25,6 +28,26 @@
 		background-color: var(--button-backgroud);
 		z-index: -1;
 	}
+
+	@media (--not-mobile) {
+		margin-bottom: 45px;
+
+		&::before {
+			top: 30%;
+			right: -30px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 30%;
+			left: -30px;
+			width: 100%;
+			height: 2px;
+			background-color: var(--button-backgroud);
+			z-index: -1;
+		}
+	}
 }
 
 .additional-product__title {
@@ -40,6 +63,9 @@
 	background-color: var(--main-background);
 
 	@media (--not-mobile) {
+		padding: 0 35px 0 37px;
+		font-size: 36px;
+		line-height: 1;
 		text-align: start;
 	}
 

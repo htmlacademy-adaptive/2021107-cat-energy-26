@@ -1,17 +1,16 @@
 .main-footer {
 	background-color: var(--footer-background);
-	// color: #000000;
 }
 
-.main-footer__wrapper {
-	// box-sizing: border-box;
-	// min-width: 320px;
-	// margin: 0 auto;
+// .main-footer__wrapper {
+// 	// box-sizing: border-box;
+// 	// min-width: 320px;
+// 	// margin: 0 auto;
 
-	@media (--not-mobile) {
-		// min-width: 768px;
-	}
-}
+// 	@media (--not-mobile) {
+// 		// min-width: 768px;
+// 	}
+// }
 
 .main-footer__contacts {
 	margin: 0 auto;
@@ -45,6 +44,10 @@
 	}
 
 	@media (--not-mobile) {
+		// временно
+		height: 34px;
+		// временно
+
 		border-bottom: none;
 		padding: 0;
 	}
