@@ -36,6 +36,7 @@
 	@media (--desktop-only) {
 		grid-template-columns: repeat(auto-fit, 245px);
 		column-gap: 80px;
+		row-gap: 64px;
 	}
 }
 
@@ -161,10 +162,14 @@
 
 	@media (--not-mobile) {
 		margin-bottom: 21px;
-		max-width: 127px;
+		max-width: 130px;
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		justify-self: center;
+	}
+
+	@media (--desktop-only) {
+		margin-bottom: 26px;
 	}
 }
 
@@ -182,6 +187,11 @@
 		font-size: 20px;
 		line-height: 1.2;
 		text-align: center;
+	}
+
+	@media (--desktop-only) {
+		font-size: 20px;
+		line-height: 1.05;
 	}
 }
 

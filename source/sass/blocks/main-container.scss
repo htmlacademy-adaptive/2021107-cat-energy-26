@@ -2,6 +2,10 @@
 .main-container {
 	flex-grow: 1;
 	background-color: var(--main-background);
+
+	@media (--desktop-only) {
+		overflow-x: hidden;
+	}
 }
 
 .main-container__wrap {
@@ -46,7 +50,7 @@
 	}
 
 	@media (--desktop-only) {
-		padding: 64px 0 0;
+		padding: 42px 0 86px;
 	}
 }
 
