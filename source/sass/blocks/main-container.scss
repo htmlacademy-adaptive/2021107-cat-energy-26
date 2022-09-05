@@ -41,7 +41,7 @@
 	}
 
 	@media (--desktop-only) {
-		padding: 27px 0 72px;
+		padding: 39px 0 83px;
 	}
 }
 
@@ -79,6 +79,10 @@
 
 	@media (--not-mobile) {
 		margin-bottom: 54px;
+	}
+
+	@media (--desktop-only) {
+		margin-bottom: 57px;
 	}
 }
 
