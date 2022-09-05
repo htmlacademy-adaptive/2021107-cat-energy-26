@@ -1,5 +1,5 @@
 .animal-parameters {
-	padding: 22px 0;
+	padding: 22px 0 24px;
 	border: none;
 
 	position: relative;
@@ -21,7 +21,7 @@
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr;
-	row-gap: 11px;
+	row-gap: 13px;
 }
 
 .animal-parameters__label {
@@ -30,27 +30,30 @@
 
 .animal-parameters__text {
 	margin-right: 15px;
+	white-space: nowrap;
 	align-self: center;
-	font-family: "Oswald", "Arial", sans-serif;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 1.13;
 	text-transform: uppercase;
-	color: #444444;
+	color: var(--base-color);
 }
 
 .animal-parameters__input {
+	width: 50px;
 	flex-grow: 1;
-	padding: 14px;
-	font-family: "Oswald", "Arial", sans-serif;
+	padding: 11px 0 11px 15px;
+	appearance: textfield;
+	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 1.35;
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
-	color: #444444;
+	color: var(--base-color);
 	border: 1px solid #e7e7e7;
 }

@@ -39,6 +39,7 @@
 
 .contacts-buyer__text {
 	margin-right: 10px;
+	white-space: nowrap;
 	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -51,7 +52,7 @@
 
 .contacts-buyer__wrap-input {
 	display: flex;
-	flex-grow: 1;
+	// flex-grow: 1;
 	position: relative;
 
 	&::before {
@@ -68,14 +69,19 @@
 }
 
 .contacts-buyer__input {
+	width: 159px;
 	flex-grow: 1;
-	padding: 15px 45px 12px 14px;
+	padding: 13px 45px 11px 14px;
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.12;
+	line-height: 1.35;
 	text-transform: uppercase;
 	color: var(--base-color);
 	border: 1px solid #e7e7e7;
+}
+
+.contacts-buyer__input[type="tel"] {
+	width: 142px;
 }
