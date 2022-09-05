@@ -116,4 +116,11 @@
 	padding-bottom: 9px;
 	font-size: 16px;
 	line-height: 1.25;
+
+	@media (--not-mobile) {
+		width: 100%;
+		max-width: 568px;
+		padding: 13px 0 12px 1px;
+		font-size: 20px;
+	}
 }

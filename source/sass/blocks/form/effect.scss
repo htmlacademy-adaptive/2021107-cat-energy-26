@@ -13,6 +13,15 @@
 		left: -20px;
 		background-color: var(--footer-border);
 	}
+
+	@media (--not-mobile) {
+		padding: 29px 0 19px;
+		border: 1px solid #e7e7e7;
+
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .effect__list {
@@ -33,6 +42,11 @@
 	min-height: 30px;
 	padding-left: 45px;
 	position: relative;
+
+	@media (--not-mobile) {
+		min-height: 40px;
+		padding-left: 88px;
+	}
 }
 
 
@@ -44,6 +58,13 @@
 	border-radius: 50%;
 	box-sizing: border-box;
 	border: 1px solid var(--example-border);
+
+	@media (--not-mobile) {
+		width: 40px;
+		height: 40px;
+		left: 29px;
+		top: -5px;
+	}
 }
 
 .effect__input:checked + .effect__control-mark::before {
@@ -57,6 +78,12 @@
 	height: 13.5px;
 	border-radius: 50%;
 	background-color: var(--button-backgroud);
+
+	@media (--not-mobile) {
+		width: 18px;
+		height: 18px;
+		left: 9px;
+	}
 }
 
 
@@ -69,4 +96,9 @@
 	line-height: 1.12px;
 	text-transform: uppercase;
 	color: #222222;
+
+	@media (--not-mobile) {
+		font-size: 20px;
+		line-height: 1.5;
+	}
 }

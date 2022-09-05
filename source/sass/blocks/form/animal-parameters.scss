@@ -13,6 +13,14 @@
 		left: -20px;
 		background-color: var(--footer-border);
 	}
+
+	@media (--not-mobile) {
+		padding-bottom: 72px;
+
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .animal-parameters__list {
@@ -22,6 +30,10 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 13px;
+
+	@media (--not-mobile) {
+		row-gap: 18px;
+	}
 }
 
 .animal-parameters__label {
@@ -39,6 +51,12 @@
 	line-height: 1.13;
 	text-transform: uppercase;
 	color: var(--base-color);
+
+	@media (--not-mobile) {
+		margin-right: 17px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
 }
 
 .animal-parameters__input {
@@ -56,4 +74,10 @@
 	text-transform: uppercase;
 	color: var(--base-color);
 	border: 1px solid #e7e7e7;
+
+	@media (--not-mobile) {
+		padding-left: 17px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
 }

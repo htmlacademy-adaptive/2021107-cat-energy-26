@@ -12,4 +12,21 @@
 		background-color: var(--button-backgroud);
 		z-index: -1;
 	}
+
+	@media (--not-mobile) {
+		&::before {
+			top: 62%;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 62%;
+			right: 100%;
+			width: 1000%;
+			height: 2px;
+			background-color: var(--button-backgroud);
+			z-index: -1;
+		}
+	}
 }

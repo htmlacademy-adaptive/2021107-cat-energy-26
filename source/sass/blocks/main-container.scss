@@ -93,6 +93,7 @@
 	color: var(--main-color);
 
 	@media (--not-mobile) {
+		margin-bottom: 42px;
 		font-size: 20px;
 		line-height: 1.5;
 	}
