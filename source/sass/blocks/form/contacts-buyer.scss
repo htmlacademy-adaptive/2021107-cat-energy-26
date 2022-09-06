@@ -80,19 +80,8 @@
 	display: flex;
 	flex-grow: 1;
 	position: relative;
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		right: 15px;
-		top: 0;
-		bottom: 0;
-		margin: auto 0;
-		border: 1px solid #000000;
-	}
 }
+
 
 .contacts-buyer__input {
 	width: 159px;
@@ -105,7 +94,24 @@
 	line-height: 1.35;
 	text-transform: uppercase;
 	color: var(--base-color);
-	border: 1px solid #e7e7e7;
+	outline: 1px solid #e7e7e7;
+	border: none;
+
+
+	&:hover {
+		outline-color: var(--example-border);
+	}
+
+	&:focus {
+		outline-color: var(--base-color);
+		outline-width: 2px;
+	}
+
+	&:invalid {
+		outline-color: #ff8282;
+		outline-width: 2px;
+	}
+
 
 	@media (--not-mobile) {
 		padding-bottom: 10px;
@@ -128,4 +134,26 @@
 	@media (--not-mobile) {
 		width: 221px;
 	}
+}
+
+.contacts-buyer__input-container {
+	&::before {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		right: 15px;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		border: 1px solid #000000;
+	}
+}
+
+.contacts-buyer__input:focus + .contacts-buyer__input-container::before {
+	background-color: #68b738;
+}
+
+.contacts-buyer__input:invalid + .contacts-buyer__input-container::before {
+	background-color: #ff8282;
 }

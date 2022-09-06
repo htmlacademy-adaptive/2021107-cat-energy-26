@@ -67,6 +67,16 @@
 	}
 }
 
+.effect__input:hover + .effect__control-mark {
+	border-color: #bababa;
+}
+
+
+.effect__input:disabled + .effect__control-mark {
+	border-color: rgba($color: #bababa, $alpha: 0.3);
+}
+
+
 .effect__input:checked + .effect__control-mark::before {
 	content: "";
 	position: absolute;
@@ -82,8 +92,13 @@
 	@media (--not-mobile) {
 		width: 18px;
 		height: 18px;
-		left: 9px;
+		left: 10px;
+		top: -2px;
 	}
+}
+
+.effect__input:checked:disabled + .effect__control-mark::before {
+	background-color: rgba($color: #68b738, $alpha: 0.3);
 }
 
 
@@ -101,4 +116,8 @@
 		font-size: 20px;
 		line-height: 1.5;
 	}
+}
+
+.effect__input:disabled ~ .effect__text {
+	color: rgba($color: #222222, $alpha: 0.3);
 }

@@ -60,6 +60,7 @@
 }
 
 .animal-parameters__input {
+	box-sizing: border-box;
 	width: 50px;
 	flex-grow: 1;
 	padding: 11px 0 11px 15px;
@@ -73,7 +74,22 @@
 	align-items: center;
 	text-transform: uppercase;
 	color: var(--base-color);
-	border: 1px solid #e7e7e7;
+	border: none;
+	outline: 1px solid #e7e7e7;
+
+	&:hover {
+		outline-color: var(--example-border);
+	}
+
+	&:focus {
+		outline-width: 2px;
+		outline-color: var(--base-color);
+	}
+
+	&:invalid {
+		border-width: 2px;
+		border-color: #ff8282;
+	}
 
 	@media (--not-mobile) {
 		padding-left: 17px;
