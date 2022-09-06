@@ -31,6 +31,7 @@
 	@media (--desktop-only) {
 		grid-column: 1 / -1;
 		grid-template-columns: 46.5% 1fr;
+		column-gap: 83px;
 	}
 }
 

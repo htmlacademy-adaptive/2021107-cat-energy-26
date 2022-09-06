@@ -15,6 +15,15 @@
 	text-decoration: none;
 	border: none;
 
+	&:hover {
+		background-color: var(--button-action);
+	}
+
+	&:active {
+		background-color: var(--button-action);
+		color: rgba($color: #ffffff, $alpha: 0.3);
+	}
+
 	@media (--not-mobile) {
 		padding: 17px 26px;
 		font-size: 20px;

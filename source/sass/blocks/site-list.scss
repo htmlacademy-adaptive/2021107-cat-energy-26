@@ -69,7 +69,7 @@
 			content: "";
 			position: absolute;
 			left: 0;
-			bottom: 0;
+			bottom: 1px;
 			width: 100%;
 			height: 2px;
 			background-color: var(--button-backgroud);
@@ -83,15 +83,15 @@
 		line-height: 1.5;
 		color: var(--main-color);
 
-		&[aria-current="page"]::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 2px;
-			background-color: var(--button-backgroud);
-		}
+		// &[aria-current="page"]::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 1px;
+		// 	width: 100%;
+		// 	height: 2px;
+		// 	background-color: var(--button-backgroud);
+		// }
 	}
 }
 
