@@ -26,4 +26,14 @@
 
 .social__link {
 	cursor: pointer;
+	padding: 2px 14px;
+
+	&:hover {
+		background-color: var(--button-backgroud);
+	}
+
+	&:focus {
+		opacity: 0.3;
+		background-color: var(--button-backgroud);
+	}
 }

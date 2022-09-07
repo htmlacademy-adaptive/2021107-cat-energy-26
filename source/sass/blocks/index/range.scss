@@ -4,27 +4,27 @@
 }
 
 .range__range-bar {
-	width: 4px;
-	height: 110%;
+	// width: 4px;
+	// height: 110%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -46%);
+	transform: translate(-50%, -21%);
 
-	background-color: #666666;
-	border-radius: 2px;
+	// background-color: #666666;
+	// border-radius: 2px;
 
 	@media (--not-mobile) {
-		height: 111%;
-		top: 20%;
-		transform: translate(-50%, -47%);
+		// height: 111%;
+		top: 21%;
+		// transform: translate(-50%, -47%);
 	}
 
 	@media (--desktop-only) {
-		height: 109.5%;
+		// height: 109.5%;
 		top: 23%;
-		left: 46%;
-		transform: translate(-80%, -46%);
+		left: 45%;
+		transform: translate(-4%, -5%);
 	}
 }
 
@@ -32,17 +32,64 @@
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: relative;
+	background-color: var(--main-background);
 
-	// &::before {
-	// 	content: "";
-	// 	width: 4px;
-	// 	height: 100%;
-	// 	background-color: #666666;
-	// 	border-radius: 2px;
-	// 	z-index: 2;
-	// }
+	&:hover {
+		background-color: var(--button-backgroud);
+	}
+
+	&:active {
+		background-color: rgba($color: #5eaa2f, $alpha: 0.6);
+	}
+
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 108px;
+		right: 16px;
+		top: calc(50% - 127px);
+		background-color: #666666;
+		border-radius: 2px;
+
+		@media (--not-mobile) {
+			height: 238px;
+			top: calc(50% - 257px);
+		}
+	}
+
+	&:hover::before {
+		background-color: var(--button-backgroud);
+	}
+
+	&:active::before {
+		background-color: rgba($color: #5eaa2f, $alpha: 0.6);
+	}
+
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 4px;
+		height: 108px;
+		right: 16px;
+		// top: 50%;
+		top: calc(50% + 19px);
+		background-color: #666666;
+		border-radius: 2px;
+
+		@media (--not-mobile) {
+			height: 234px;
+		}
+	}
+
+	&:hover::after {
+		background-color: var(--button-backgroud);
+	}
+
+	&:active::after {
+		background-color: rgba($color: #5eaa2f, $alpha: 0.6);
+	}
 }

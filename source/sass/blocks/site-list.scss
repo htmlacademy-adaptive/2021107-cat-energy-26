@@ -57,6 +57,15 @@
 	text-align: center;
 	cursor: pointer;
 
+	&:hover {
+		color: rgba($color: #000000, $alpha: 0.6);
+	}
+
+	&:active {
+		color: rgba($color: #000000, $alpha: 0.3);
+	}
+
+
 	@media (--not-mobile) {
 		position: relative;
 		padding: 10px 0;
@@ -73,6 +82,14 @@
 			width: 100%;
 			height: 2px;
 			background-color: var(--button-backgroud);
+		}
+
+		&:hover::before {
+			background-color: rgba($color: #68b738, $alpha: 0.6);
+		}
+
+		&:active::before {
+			background-color: rgba($color: #68b738, $alpha: 0.3);
 		}
 	}
 
@@ -99,8 +116,25 @@
 	@media (--desktop-only) {
 		color: var(--main-background);
 
+		&:hover {
+			color: rgba($color: #ffffff, $alpha: 0.6);
+		}
+
+		&:active {
+			color: rgba($color: #ffffff, $alpha: 0.3);
+		}
+
+
 		&[aria-current="page"]::before {
 			background-color: var(--main-background);
+		}
+
+		&:hover::before {
+			background-color: rgba($color: #ffffff, $alpha: 0.6);
+		}
+
+		&:active::before {
+			background-color: rgba($color: #ffffff, $alpha: 0.3);
 		}
 	}
 }
