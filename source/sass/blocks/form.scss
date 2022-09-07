@@ -1,5 +1,5 @@
 .form {
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 46.5% 1fr;
 		column-gap: 82px;
@@ -11,24 +11,24 @@
 }
 
 .form__parameters--effect {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 75px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 24px 0 20px;
 	}
 }
 
 .form__wrap-sending-data {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		max-width: 1220px;
 		display: grid;
 		grid-template-columns: 44.8% 1fr;
 		column-gap: 61px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-column: 1 / -1;
 		grid-template-columns: 46.5% 1fr;
 		column-gap: 83px;
@@ -38,7 +38,7 @@
 .form__button {
 	margin: 0 auto 29px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: 0;
 	}
 }
@@ -55,7 +55,7 @@
 	color: var(--main-color);
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		align-self: center;
 		justify-self: start;
 		font-size: 16px;

@@ -7,7 +7,7 @@
 	color: var(--main-color);
 	align-items: center;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 100%;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -15,7 +15,7 @@
 	}
 
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		background-color: transparent;
 	}
 }
@@ -31,7 +31,7 @@
 		border-bottom: 1px solid var(--border-nav);
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: auto;
 		border: none;
 		margin-right: 35px;
@@ -66,7 +66,7 @@
 	}
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		position: relative;
 		padding: 10px 0;
 		font-weight: 400;
@@ -94,7 +94,7 @@
 	}
 
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding-top: 15px;
 		font-size: 20px;
 		line-height: 1.5;
@@ -113,7 +113,7 @@
 }
 
 .site-list__link--light {
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		color: var(--main-background);
 
 		&:hover {

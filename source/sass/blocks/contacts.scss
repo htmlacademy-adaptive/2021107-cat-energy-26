@@ -1,12 +1,12 @@
 
 .contacts {
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		position: relative;
 	}
 }
 
 .contacts__text {
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		position: absolute;
 		left: 110px;
 		top: 94px;
@@ -18,7 +18,7 @@
 		border: none;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0 auto;
 	}
 }
@@ -30,7 +30,7 @@
 	width: 100%;
 	max-width: 1440px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		height: 400px;
 	}
 }

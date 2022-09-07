@@ -14,7 +14,7 @@
 		background-color: var(--footer-border);
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding-bottom: 72px;
 
 		&::before {
@@ -31,7 +31,7 @@
 	grid-template-columns: 1fr;
 	row-gap: 13px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		row-gap: 18px;
 	}
 }
@@ -52,7 +52,7 @@
 	text-transform: uppercase;
 	color: var(--base-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-right: 17px;
 		font-size: 20px;
 		line-height: 1.5;
@@ -91,7 +91,7 @@
 		border-color: #ff8282;
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding-left: 17px;
 		font-size: 20px;
 		line-height: 1.5;

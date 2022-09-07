@@ -7,7 +7,7 @@
 // 	// min-width: 320px;
 // 	// margin: 0 auto;
 
-// 	@media (--not-mobile) {
+// 	@media #{$not-mobile} {
 // 		// min-width: 768px;
 // 	}
 // }
@@ -22,14 +22,14 @@
 	flex-direction: column;
 	background-color: var(--footer-background);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 65px 0 28px;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding: 62px 0 33px;
 	}
 }
@@ -43,7 +43,7 @@
 		border-bottom: none;
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		// временно
 		height: 34px;
 		// временно
@@ -52,7 +52,7 @@
 		padding: 0;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding-left: 28px;
 	}
 }
@@ -60,7 +60,7 @@
 .main-footer__social--home-page {
 	padding: 40px 0 32px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 0;
 	}
 }

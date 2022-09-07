@@ -2,12 +2,12 @@
 	position: relative;
 	z-index: 1;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		background-image: none;
 		position: relative;
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		// padding: 0 0 0 80px;
 	}
 
@@ -20,12 +20,12 @@
 		margin: 0 auto;
 		width: 320px;
 		height: 302px;
-		background-image: url("../../../img/advantages-index-logo@1x.png");
+		background-image: url("../../img/advantages-index-logo@1x.png");
 		background-size: contain;
 		background-repeat: no-repeat;
 		z-index: -1;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			display: none;
 		}
 	}
@@ -40,11 +40,11 @@
 		background-color: rgba(104, 183, 56, 0.85);
 		z-index: -1;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			display: none;
 		}
 
-		// @media (--not-mobile) {
+		// @media #{$not-mobile} {
 		// 	display: inline-block;
 		// }
 	}
@@ -53,12 +53,12 @@
 .advantages-present__wrapper-text {
 	padding-top: 27px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 420px;
 		padding-left: 87px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding-left: 80px;
 		padding-top: 77px;
 	}
@@ -74,7 +74,7 @@
 	text-align: center;
 	color: var(--main-background);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 41px;
 		font-size: 60px;
 		line-height: 60px;
@@ -82,7 +82,7 @@
 		text-align: start;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-bottom: 40px;
 	}
 }
@@ -98,7 +98,7 @@
 	color: var(--main-background);
 	text-align: center;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 20px;
 		color: var(--main-color);
@@ -110,14 +110,14 @@
 	margin: 0 auto 3px;
 	display: block;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 0;
 		width: 709px;
 		height: 609px;
 	}
 
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		width: 552px;
 		height: 499px;
 		position: relative;

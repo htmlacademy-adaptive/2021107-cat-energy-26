@@ -3,11 +3,11 @@
 	padding: 33px 0 11px;
 	border: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 74px 0 52px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-column: 1 / -1;
 		padding: 70px 0 67px;
 	}
@@ -23,7 +23,7 @@
 	color: var(--main-color);
 	background-color: var(--main-background);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-left: -40px;
 		padding: 0 39px 0 38px;
 		font-size: 36px;
@@ -43,11 +43,11 @@
 	grid-template-columns: 1fr;
 	row-gap: 14px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		row-gap: 18px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 78px;
 	}
@@ -69,7 +69,7 @@
 	text-transform: uppercase;
 	color: var(--base-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-right: 17px;
 		font-size: 20px;
 		line-height: 1.5;
@@ -113,7 +113,7 @@
 	}
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding-bottom: 10px;
 		font-size: 20px;
 		line-height: 1.5;
@@ -121,7 +121,7 @@
 }
 
 .contacts-buyer__input[type="email"] {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 228px;
 		padding-left: 23px;
 	}
@@ -131,7 +131,7 @@
 .contacts-buyer__input[type="tel"] {
 	width: 142px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 221px;
 	}
 }

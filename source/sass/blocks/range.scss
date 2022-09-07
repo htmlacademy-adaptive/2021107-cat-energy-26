@@ -14,13 +14,13 @@
 	// background-color: #666666;
 	// border-radius: 2px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		// height: 111%;
 		top: 21%;
 		// transform: translate(-50%, -47%);
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		// height: 109.5%;
 		top: 23%;
 		left: 45%;
@@ -54,7 +54,7 @@
 		background-color: #666666;
 		border-radius: 2px;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			height: 238px;
 			top: calc(50% - 257px);
 		}
@@ -80,7 +80,7 @@
 		background-color: #666666;
 		border-radius: 2px;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			height: 234px;
 		}
 	}

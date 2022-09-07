@@ -3,11 +3,11 @@
 	padding: 37px 0 30px;
 	border: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 64px 0 47px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-column: 1 / -1;
 		padding: 64px 0 55px;
 	}
@@ -22,7 +22,7 @@
 	line-height: 1.08;
 	color: var(--main-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-left: -40px;
 		padding: 0 39px 0 38px;
 		font-size: 36px;
@@ -38,14 +38,14 @@
 	grid-template-columns: 1fr;
 	row-gap: 12px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 280px);
 		column-gap: 64px;
 		row-gap: 32px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-template-columns: repeat(auto-fit, 221px);
 		column-gap: 104px;
 	}
@@ -57,7 +57,7 @@
 	padding-left: 45px;
 	position: relative;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		min-height: 40px;
 		padding-left: 59px;
 	}
@@ -72,7 +72,7 @@
 	box-sizing: border-box;
 	border: 1px solid var(--example-border);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 40px;
 		height: 40px;
 		top: -7px;
@@ -116,7 +116,7 @@
 	text-transform: uppercase;
 	color: var(--main-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 1;
 	}

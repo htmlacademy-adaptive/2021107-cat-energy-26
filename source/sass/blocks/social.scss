@@ -1,7 +1,7 @@
 .social {
 	padding-bottom: 18px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 0;
 	}
 }

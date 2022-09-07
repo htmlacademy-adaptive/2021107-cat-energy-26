@@ -3,7 +3,7 @@
 }
 
 .main-header--background {
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		z-index: 1;
 
 		&::before {
@@ -16,7 +16,7 @@
 			// width: 50%;
 			width: 720px;
 			height: 694px;
-			background-image: url("../../../img/advantages-index-logo@1x.png");
+			background-image: url("../../img/advantages-index-logo@1x.png");
 			background-size: contain;
 			background-repeat: no-repeat;
 			z-index: -1;
@@ -43,13 +43,13 @@
 	justify-content: space-between;
 	position: relative;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		position: static;
 		align-items: center;
 		padding: 23px 0 26px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		box-sizing: content-box;
 		padding: 53px 0 29px;
 		display: grid;
@@ -62,13 +62,13 @@
 	align-items: center;
 
 	// Временное решение
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 174px;
 		height: 52px;
 		border: dashed 1px #000000;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		width: 202px;
 		height: 59px;
 	}
@@ -78,7 +78,7 @@
 
 // Временное решение
 .main-header__logo img {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: none;
 	}
 }
@@ -89,7 +89,7 @@
 	height: 38px;
 	margin-right: 57px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-right: 12px;
 	}
 }

@@ -5,13 +5,13 @@
 	grid-template-columns: 1fr 1fr;
 	column-gap: 32px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: 42px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding-left: 110px;
 		display: grid;
 		grid-template-rows: auto auto;
@@ -31,13 +31,13 @@
 	border: 1px solid var(--example-border);
 	border-radius: 3px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: 0;
 		width: 162px;
 		padding: 15px 0 20px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		background-color: var(--footer-background);
 	}
 }
@@ -54,7 +54,7 @@
 	border: none;
 	text-align: center;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-left: auto;
 		width: auto;
 		padding-top: 10px;
@@ -64,11 +64,11 @@
 		grid-template-columns: 180px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0;
 		height: 100%;
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		text-align: left;
 	}
 }
@@ -88,7 +88,7 @@
 	color: var(--base-color);
 	order: 2;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: max-content;
 		top: 86%;
 		padding: 0 8px;
@@ -100,12 +100,12 @@
 		margin: 0 auto;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		background-color: var(--footer-background);
 	}
 
 	& br {
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			display: none;
 		}
 	}
@@ -123,7 +123,7 @@
 	color: var(--main-color);
 	order: 1;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 30px;
 		line-height: 1.23;
 	}
@@ -145,7 +145,7 @@
 	order: 1;
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: 0;
 		padding: 0;
 		white-space: inherit;
@@ -154,7 +154,7 @@
 		line-height: 1;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-right: 63px;
 	}
 }
@@ -171,7 +171,7 @@
 	color: var(--main-color);
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		text-align: right;
 		font-size: 20px;
 		line-height: 1;

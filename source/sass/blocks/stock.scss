@@ -2,8 +2,8 @@
 	width: 100%;
 	height: 100%;
 	background-image:
-		url("../../../img/catalog-stock-background@1x.png"),
-		url("../../../img/catalog-stock@1x.png");
+		url("../../img/catalog-stock-background@1x.png"),
+		url("../../img/catalog-stock@1x.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -22,7 +22,7 @@
 	}
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		&::before {
 			width: 80px;
 			height: 83px;
@@ -31,7 +31,7 @@
 		}
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		&::before {
 			left: 82px;
 		}
@@ -49,13 +49,13 @@
 	text-align: center;
 	color: #ffffff;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 165px;
 		padding: 70px 0 70px 60%;
 		text-align: start;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0 auto;
 		padding: 187px 0 0;
 		text-align: center;

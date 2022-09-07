@@ -13,7 +13,7 @@
 		z-index: -1;
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		&::before {
 			top: 62%;
 		}

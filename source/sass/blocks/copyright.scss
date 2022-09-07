@@ -1,11 +1,11 @@
 .copyright {
 	padding: 25px 0 22px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 0;
 	}
 
-	// @media (--desktop-only) {
+	// @media #{$desktop-only} {
 	// 	padding: 19px 0 27px;
 	// }
 }
@@ -26,7 +26,7 @@
 	color: var(--base-color);
 
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-right: 22px;
 	}
 }

@@ -14,7 +14,7 @@
 		background-color: var(--footer-border);
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 29px 0 19px;
 		border: 1px solid #e7e7e7;
 
@@ -43,7 +43,7 @@
 	padding-left: 45px;
 	position: relative;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		min-height: 40px;
 		padding-left: 88px;
 	}
@@ -59,7 +59,7 @@
 	box-sizing: border-box;
 	border: 1px solid var(--example-border);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 40px;
 		height: 40px;
 		left: 29px;
@@ -89,7 +89,7 @@
 	border-radius: 50%;
 	background-color: var(--button-backgroud);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 18px;
 		height: 18px;
 		left: 10px;
@@ -112,7 +112,7 @@
 	text-transform: uppercase;
 	color: #222222;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 1.5;
 	}
