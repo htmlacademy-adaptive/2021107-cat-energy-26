@@ -12,14 +12,18 @@
 			top: 0;
 			left: 50%;
 			margin: 0 auto;
-			// width: 703px;
-			// width: 50%;
-			width: 720px;
+			width: 50%;
+			// width: 720px;
 			height: 694px;
-			background-image: url("../../img/advantages-index-logo@1x.png");
+			background-image: url("../../img/advantages-index-logo-desktop@1x.jpg");
 			background-size: contain;
 			background-repeat: no-repeat;
 			z-index: -1;
+
+			@media (min-resolution: 2dppx) {
+				background-image: url("../../img/advantages-index-logo-desktop@2x.jpg");
+				background-repeat: no-repeat;
+			}
 		}
 
 		&::after {

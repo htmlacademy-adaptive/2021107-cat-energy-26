@@ -11,22 +11,29 @@
 		// padding: 0 0 0 80px;
 	}
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: -7%;
-		right: 0;
-		margin: 0 auto;
-		width: 320px;
-		height: 302px;
-		background-image: url("../../img/advantages-index-logo-mobile@1x.jpg");
-		background-size: contain;
-		background-repeat: no-repeat;
-		z-index: -1;
+	@media #{$mobile-only} {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -7%;
+			right: 0;
+			margin: 0 auto;
+			width: 320px;
+			height: 302px;
+			background-image: url("../../img/advantages-index-logo-mobile@1x.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: -1;
 
-		@media #{$not-mobile} {
-			display: none;
+			@media (min-resolution: 2dppx) {
+				background-image: url("../../img/advantages-index-logo-mobile@2x.jpg");
+				background-size: contain;
+			}
+
+			@media #{$not-mobile} {
+				display: none;
+			}
 		}
 	}
 
@@ -99,10 +106,15 @@
 	text-align: center;
 
 	@media #{$not-mobile} {
+		margin-bottom: 19px;
 		font-size: 20px;
 		line-height: 20px;
 		color: var(--main-color);
 		text-align: start;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 30px;
 	}
 }
 
@@ -121,7 +133,7 @@
 		width: 552px;
 		height: 499px;
 		position: relative;
-		right: -140px;
-		top: -289px;
+		right: -114px;
+		top: -293px;
 	}
 }
