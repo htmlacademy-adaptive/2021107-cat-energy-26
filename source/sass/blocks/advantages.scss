@@ -1,6 +1,84 @@
 .advantages {
 	background-color: var(--main-background);
 	color: var(--main-color);
+
+	@media #{$mobile-only} {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			// Если нужно отцентрировать кота на мобильной версии при растягивании
+			// left: 0;
+			// margin: 0 auto;
+			width: 320px;
+			height: 302px;
+			background-image: url("../../img/advantages-index-logo-mobile@1x.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: -1;
+
+			@media (min-resolution: 2dppx) {
+				background-image: url("../../img/advantages-index-logo-mobile@2x.jpg");
+				background-size: contain;
+			}
+
+			@media #{$not-mobile} {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 302px;
+			background-color: rgba(104, 183, 56, 0.85);
+			z-index: -1;
+
+			// Без этого св-ва фон на хроме пропадёт только 769рх
+			@media #{$not-mobile} {
+				display: none;
+			}
+		}
+	}
+
+	@media #{$desktop-only} {
+		// z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: 0 auto;
+			width: 50%;
+			height: 694px;
+			background-image: url("../../img/advantages-index-logo-desktop@1x.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+
+			@media (min-resolution: 2dppx) {
+				background-image: url("../../img/advantages-index-logo-desktop@2x.jpg");
+				background-repeat: no-repeat;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 50%;
+			max-width: 720px;
+			height: 694px;
+			background-color: rgba(104, 183, 56, 0.85);
+		}
+	}
 }
 
 .advantages__wrapper {
@@ -11,14 +89,9 @@
 	flex-direction: column;
 	align-items: center;
 
-	@media #{$not-mobile} {
-		// padding: 0 30px;
-	}
 
 	@media #{$desktop-only} {
 		box-sizing: content-box;
-		// max-width: 1220px;
-		// padding: 0 110px;
 	}
 }
 
@@ -77,7 +150,7 @@
 
 	@media #{$desktop-only} {
 		width: 242px;
-		left: 81px;
-		top: 39.2%;
+		left: 191px;
+		top: 93.8%;
 	}
 }
