@@ -27,6 +27,7 @@ export default {
 			"alt": "Магазин по адресу: улица Большая Конюшенная дом 19/8 офис 101, город Санкт-Петербург.",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
+
 		"food-packaging": {
 			"ext": "png",
 			"width": 280,
@@ -48,6 +49,17 @@ export default {
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
+		"advantages-index-logo": {
+			"ext": "jpg",
+			"width": 320,
+			"height": 302,
+			"maxdppx": 2,
+			"viewports": ["desktop", "mobile"]
+		},
+
+
+
+		// Каталог товаров
 		"products/product1-small": {
 			"ext": "png",
 			"width": 68,
