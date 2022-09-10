@@ -14,21 +14,9 @@
 					<h2 class="advantages-present__title">Функциональное питание для котов</h2>
 					<p class="advantages-present__slogan">Занялся собой? Займись котом!</p>
 				</div>
-				<picture>
 
-					{# <source type="image/avif" media="(min-width: 1280px)" srcset="img/food-packaging-desktop@1x.avif 1x, img/food-packaging-desktop@2x.avif 2x">
-					<source type="image/avif" media="(min-width: 768px)" srcset="img/food-packaging-tablet@1x.avif 1x, img/food-packaging-tablet@2x.avif 2x">
-					<source type="image/avif" srcset="img/food-packaging-mobile@1x.avif 1x, img/food-packaging-mobile@2x.avif 2x"> #}
+				{% include "./templates/picture.twig" with {name: "food-packaging", class: "advantages-present__images", alt: "Баночка кошачей еды."} %}
 
-					{# <source type="image/webp" media="(min-width: 1280px)" srcset="img/food-packaging-desktop@1x.webp 1x, img/food-packaging-desktop@2x.webp 2x">
-					<source type="image/webp" media="(min-width: 768px)" srcset="img/food-packaging-tablet@1x.webp 1x, img/food-packaging-tablet@2x.webp 2x">
-					<source type="image/webp" srcset="img/food-packaging-mobile@1x.webp 1x, img/food-packaging-mobile@2x.webp 2x"> #}
-
-					<source media="(min-width: 1280px)" srcset="img/food-packaging-desktop@1x.png 1x, img/food-packaging-desktop@2x.png 2x">
-					<source media="(min-width: 768px)" srcset="img/food-packaging-tablet@1x.png 1x, img/food-packaging-tablet@2x.png 2x">
-					<img class="advantages-present__images" src="img/food-packaging-mobile@1x.png" srcset="img/food-packaging-mobile@2x.png 2x" width="280" height="270" alt="Баночка кошачей еды.">
-
-				</picture>
 				<a class="advantages__button button" href="form.html">подобрать программу</a>
 			</div>
 
@@ -88,8 +76,19 @@
 				</div>
 			</dl>
 		</div>
-		<div class="statistics__images-wrapper">
-			<img class="statistics__images" src="img/cat-mobile@1x.png" width="280" height="232" alt="Кот &ldquo;до&rdquo; или &ldquo;после&rdquo; приёма функционального питания.">
+		<div class="statistics__images-wrapper slider">
+			<div class="slider__before">
+				{# {% include "./templates/picture.twig" with {name: "food-packaging", class: "advantages-present__images", alt: "Баночка кошачей еды."} %} #}
+
+				{% include "./templates/picture.twig" with {name: "cat-before", class: "statistics__images slider__images slider__images--before", alt: "Кот до приёма функционального питания."} %}
+			</div>
+			<div class="slider__curtain"></div>
+			<div class="slider__after">
+				{% include "./templates/picture.twig" with {name: "cat-after", class: "statistics__images slider__images slider__images--after", alt: "Кот после приёма функционального питания."} %}
+
+			</div>
+
+			{# <img class="statistics__images" src="img/cat-mobile@1x.png" width="280" height="232" alt="Кот &ldquo;до&rdquo; или &ldquo;после&rdquo; приёма функционального питания.">
 			<div class="statistics__range range">
 				<div class="range__range-bar">
 					<!-- div class="range-bar" style="left: 0; right: 60px" -->
@@ -97,7 +96,7 @@
 						<span class="visually-hidden">Изменить вид кота</span>
 					</button>
 				</div>
-			</div>
+			</div> #}
 		</div>
 
 	</section>

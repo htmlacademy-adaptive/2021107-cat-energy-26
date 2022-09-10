@@ -26,6 +26,77 @@ export default {
 			"maxdppx": 2,
 			"alt": "Магазин по адресу: улица Большая Конюшенная дом 19/8 офис 101, город Санкт-Петербург.",
 			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"food-packaging": {
+			"ext": "png",
+			"width": 280,
+			"height": 270,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"cat-before": {
+			"ext": "png",
+			"width": 280,
+			"height": 256,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"cat-after": {
+			"ext": "png",
+			"width": 280,
+			"height": 256,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product1-small": {
+			"ext": "png",
+			"width": 68,
+			"height": 86,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product1": {
+			"ext": "png",
+			"width": 84,
+			"height": 101,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product2-small": {
+			"ext": "png",
+			"width": 68,
+			"height": 86,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product2": {
+			"ext": "png",
+			"width": 84,
+			"height": 101,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product3-small": {
+			"ext": "png",
+			"width": 68,
+			"height": 86,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product3": {
+			"ext": "png",
+			"width": 84,
+			"height": 101,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
+		"products/product4-small": {
+			"ext": "png",
+			"width": 68,
+			"height": 86,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
 		}
+
 	}
 }

@@ -119,22 +119,22 @@
 }
 
 .statistics__images {
-	margin: 0 auto;
+	// margin: 0 auto;
 	display: block;
 
-	@media #{$not-mobile} {
-		margin-bottom: -50px;
+	// @media #{$not-mobile} {
+	// 	margin-bottom: -50px;
 
-		width: 560px;
-		height: 512px;
-		position: relative;
-		top: -151px;
-	}
+	// 	width: 560px;
+	// 	height: 512px;
+	// 	position: relative;
+	// 	top: -151px;
+	// }
 
-	@media #{$desktop-only} {
-		margin: 0 auto -84px;
-		top: -125px;
-	}
+	// @media #{$desktop-only} {
+	// 	margin: 0 auto -84px;
+	// 	top: -125px;
+	// }
 }
 
 // .statistics__range {
