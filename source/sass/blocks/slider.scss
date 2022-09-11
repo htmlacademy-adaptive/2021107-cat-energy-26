@@ -1,3 +1,22 @@
 .slider {
 	background-color: #000000;
+
+	// max-width: 560px;
+	display: flex;
+	// grid-template-columns: 138px auto 138px;
+	// aspect-ratio: 280/256;
+	position: relative;
+}
+
+// .slider__before {
+// 	// overflow-x: hidden;
+// }
+
+// .slider__after {
+// 	// overflow-x: hidden;
+// }
+
+.slider__images {
+	height: 100%;
+	object-fit: cover;
 }
