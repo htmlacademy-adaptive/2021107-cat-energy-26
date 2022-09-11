@@ -53,7 +53,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 42px 0 86px;
+		padding: 52px 0 86px;
 	}
 }
 
@@ -71,6 +71,10 @@
 		margin-bottom: 82px;
 		font-size: 60px;
 		line-height: 1;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 84px;
 	}
 }
 

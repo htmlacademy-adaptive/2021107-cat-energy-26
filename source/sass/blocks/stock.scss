@@ -1,13 +1,9 @@
 .stock {
+	@include bg-image("catalog-stock");
+
 	width: 100%;
 	height: 100%;
-	background-image:
-		url("../../img/catalog-stock-background@1x.png"),
-		url("../../img/catalog-stock@1x.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: rgba(104, 183, 56, 0.85);
+	background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), var(--bg-image) no-repeat center/contain;
 
 	position: relative;
 

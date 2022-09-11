@@ -28,14 +28,6 @@
 		grid-row: 1 / -1;
 		padding: 0 0 75px;
 		background-color: var(--footer-background);
-		// box-sizing: content-box;
-		// max-width: 1220px;
-		// padding: 66px 110px 40px;
-		// display: grid;
-		// grid-template-columns: 440px 560px;
-		// column-gap: 224px;
-		// grid-template-rows: repeat(3, auto);
-		// row-gap: 70px;
 	}
 }
 
@@ -87,7 +79,6 @@
 		margin: 0;
 		max-width: 437px;
 		padding: 0 0 70px 110px;
-		// font-size: 13px;
 		line-height: 1.5;
 		background-color: var(--footer-background);
 	}
@@ -112,9 +103,6 @@
 	@media #{$desktop-only} {
 		grid-row: 2 / -1;
 		background-color: var(--footer-background);
-
-		// grid-column: -1 / -2;
-		// align-self: center;
 	}
 }
 

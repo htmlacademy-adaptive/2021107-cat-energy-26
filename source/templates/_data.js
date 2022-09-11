@@ -56,6 +56,13 @@ export default {
 			"maxdppx": 2,
 			"viewports": ["desktop", "mobile"]
 		},
+		"catalog-stock": {
+			"ext": "jpg",
+			"width": 279,
+			"height": 289,
+			"maxdppx": 2,
+			"viewports": ["desktop", "tablet", "mobile"]
+		},
 
 
 
