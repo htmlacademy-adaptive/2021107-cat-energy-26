@@ -23,6 +23,7 @@
 	background-color: var(--footer-background);
 
 	@media #{$not-mobile} {
+		margin-bottom: 22px;
 		padding: 65px 0 28px;
 		flex-direction: row;
 		justify-content: space-between;

@@ -78,12 +78,17 @@
 		</div>
 		<div class="statistics__images-wrapper slider">
 			<div class="slider__before">
-				{# {% include "./templates/picture.twig" with {name: "food-packaging", class: "advantages-present__images", alt: "Баночка кошачей еды."} %} #}
 
 				{% include "./templates/picture.twig" with {name: "cat-before", class: "statistics__images slider__images slider__images--before", alt: "Кот до приёма функционального питания."} %}
+
 			</div>
-			<div class="slider__curtain"></div>
+			<div class="slider__curtain">
+				<button class="slider__range-toggle" type="button">
+				<span class="visually-hidden">Изменить вид кота</span>
+
+			</div>
 			<div class="slider__after">
+
 				{% include "./templates/picture.twig" with {name: "cat-after", class: "statistics__images slider__images slider__images--after", alt: "Кот после приёма функционального питания."} %}
 
 			</div>
