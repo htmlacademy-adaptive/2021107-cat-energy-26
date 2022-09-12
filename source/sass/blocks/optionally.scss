@@ -1,6 +1,6 @@
 .optionally {
 	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
-	padding: 37px 0 30px;
+	padding: 37px 0 32px;
 	border: none;
 
 	@media #{$not-mobile} {
@@ -42,7 +42,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 280px);
 		column-gap: 64px;
-		row-gap: 32px;
+		row-gap: 34px;
 	}
 
 	@media #{$desktop-only} {
