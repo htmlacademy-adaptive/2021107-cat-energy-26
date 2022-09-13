@@ -40,8 +40,13 @@
 	right: 0;
 	width: 24px;
 	height: 27px;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
+	mask: url("../../img/stack.svg#copyright") no-repeat center / contain;
+	background-color: #666666;
+
+	@media #{$not-mobile} {
+		width: 27px;
+		height: 34px;
+	}
 }
 
 .copyright__link:hover .copyright__image {

@@ -1,5 +1,6 @@
 .social {
-	padding-bottom: 18px;
+	padding: 20px 0 18px;
+
 
 	@media #{$not-mobile} {
 		padding: 0;
@@ -16,24 +17,47 @@
 	list-style-type: none;
 }
 
-.social__item {
-	// временная обводка
-	width: 28px;
-	height: 22px;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
-}
-
 .social__link {
 	cursor: pointer;
 	padding: 2px 14px;
+	background: no-repeat center / contain;
+}
+
+.social__link--vkontakte {
+	mask: url("../../img/stack.svg#vk") no-repeat center / contain;
+	background-color: #666666;
 
 	&:hover {
 		background-color: var(--button-backgroud);
 	}
 
-	&:focus {
-		opacity: 0.3;
+	&:active {
+		background-color: rgba($color: #68b738, $alpha: 0.3);
+	}
+}
+
+.social__link--youtube {
+	mask: url("../../img/stack.svg#youtube") no-repeat center / contain;
+	background-color: #666666;
+
+	&:hover {
 		background-color: var(--button-backgroud);
+	}
+
+	&:active {
+		background-color: rgba($color: #68b738, $alpha: 0.3);
+	}
+}
+
+.social__link--telegram {
+	mask: url("../../img/stack.svg#telegram") no-repeat center / contain;
+	background-color: #666666;
+
+	&:hover {
+		background-color: var(--button-backgroud);
+	}
+
+	&:active {
+		background-color: rgba($color: #68b738, $alpha: 0.3);
 	}
 }
