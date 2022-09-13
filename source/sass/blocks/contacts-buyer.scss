@@ -140,18 +140,40 @@
 	&::before {
 		content: "";
 		position: absolute;
-		width: 20px;
-		height: 20px;
+		// width: 20px;
+		// height: 20px;
 		right: 15px;
 		top: 0;
 		bottom: 0;
 		margin: auto 0;
-		border: 1px solid #000000;
 	}
 }
 
+// .contacts-buyer__input:focus + .contacts-buyer__input-container::before {
+// 	background-color: #68b738;
+// }
+
+// .contacts-buyer__input:invalid + .contacts-buyer__input-container::before {
+// 	background-color: #ff8282;
+// }
+
+.contacts-buyer__input-container--email::before {
+	top: 8px;
+	width: 20px;
+	height: 20px;
+	mask: url("../../img/stack.svg#icon-email") no-repeat center / contain;
+	background-color: #222222;
+}
+
+.contacts-buyer__input-container--tel::before {
+	width: 21px;
+	height: 21px;
+	mask: url("../../img/stack.svg#icon-tel") no-repeat center / contain;
+	background-color: #222222;
+}
+
 .contacts-buyer__input:focus + .contacts-buyer__input-container::before {
-	background-color: #68b738;
+	background-color: var(--button-backgroud);
 }
 
 .contacts-buyer__input:invalid + .contacts-buyer__input-container::before {
