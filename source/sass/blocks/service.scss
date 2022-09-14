@@ -8,8 +8,6 @@
 }
 
 .service__wrapper {
-	// box-sizing: border-box;
-	// min-width: 320px;
 	padding: 0 0 49px;
 
 	@media #{$not-mobile} {
@@ -101,7 +99,6 @@
 			left: 0;
 			width: 80px;
 			height: 80px;
-			border: dashed 1px #000000;
 		}
 
 		&::after {
