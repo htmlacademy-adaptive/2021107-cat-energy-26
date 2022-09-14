@@ -30,11 +30,9 @@
 	display: flex;
 	align-items: center;
 
-	// Временное решение
 	@media #{$not-mobile} {
 		width: 174px;
 		height: 52px;
-		border: dashed 1px #000000;
 	}
 
 	@media #{$desktop-only} {
@@ -43,21 +41,44 @@
 	}
 }
 
-// Временное решение
-.main-header__logo img {
-	@media #{$not-mobile} {
-		display: none;
-	}
-}
-
 .main-header__logo-image {
 	display: block;
 	width: 34px;
-	height: 38px;
+	height: 39px;
 	margin-right: 57px;
+	object-fit: fill;
+
+	// & .logo-mobile svg[id="logo-text"] {
+	// 	display: none;
+	// }
+
+	// & .logo-mobile svg[id="tablet"] {
+	// 	display: none;
+	// }
+
+	// & .logo-mobile svg[id="desctop"] {
+	// 	display: none;
+	// }
+
 
 	@media #{$not-mobile} {
 		margin-right: 12px;
+		width: 174px;
+		height: 52px;
+
+
+		// & .logo-mobile svg[id="mobile"] {
+		// 	display: none;
+		// }
+
+		// & .logo-tablet {
+		// 	display: block;
+		// }
+	}
+
+	@media #{$not-mobile} {
+		width: 202px;
+		height: 59px;
 	}
 }
 
@@ -65,4 +86,9 @@
 	display: block;
 	width: 101px;
 	height: 18px;
+	object-fit: fill;
+
+	@media #{$not-mobile} {
+		display: none;
+	}
 }

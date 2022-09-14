@@ -1,9 +1,16 @@
 <header class="main-header">
 	<div class="main-header__wrapper page__centerer">
 		<a class="main-header__logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-			<img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Магазин CAT ENERGY.">
+			<picture>
 
-			<img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин CAT ENERGY.">
+				<source type="image/svg" media="(min-width: 1280px)" srcset="img/logo.svg#desctop">
+				<source type="image/svg" media="(min-width: 768px)" srcset="img/logo.svg#tablet">
+				<img class="main-header__logo-image" src="img/logo.svg#mobile" width="34" height="38" alt="Магазин CAT ENERGY.">
+
+			</picture>
+			{# {% include "./templates/picture.twig" with {name: "cat-before", class: "statistics__images slider__images slider__images--before", alt: "Кот до приёма функционального питания."} %} #}
+
+			<img class="main-header__logo-text" src="img/logo.svg#logo-text" width="101" height="18" alt="Магазин CAT ENERGY.">
 			<span class="visually-hidden">Магазин CAT ENERGY</span>
 		</a>
 		{# <nav class="main-header__nav main-nav main-nav--opened main-nav--nojs"> #}
