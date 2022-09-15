@@ -30,6 +30,15 @@
 	display: flex;
 	align-items: center;
 
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+
+
 	@media #{$not-mobile} {
 		width: 174px;
 		height: 52px;
