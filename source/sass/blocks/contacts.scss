@@ -14,12 +14,26 @@
 }
 
 .contacts__map-wrapper {
+	position: relative;
+
 	& iframe {
 		border: none;
 	}
 
 	@media #{$desktop-only} {
 		margin: 0 auto;
+	}
+}
+
+.contacts__map-image {
+	position: absolute;
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 362px;
+
+	@media #{$not-mobile} {
+		height: 400px;
 	}
 }
 

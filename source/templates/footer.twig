@@ -8,6 +8,12 @@
 				<p class="contacts-text__text">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург<span></p>
 			</div>
 			<div class="contacts__map-wrapper">
+
+
+				<noscript>
+					{% include "picture.twig" with {name: "location", class: "contacts__map-image", "alt": "Магазин по адресу: улица Большая Конюшенная дом 19/8 офис 101, город Санкт-Петербург."} %}
+				</noscript>
+
 				<iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A54016f96c2f8c78ee8d9ede60adda58d0693fac730210e497672de76dfa71c5c&amp;source=constructor" width="320" height="362"></iframe>
 			</div>
 		</div>

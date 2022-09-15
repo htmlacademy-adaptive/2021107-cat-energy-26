@@ -12,6 +12,7 @@
 	}
 
 	@media #{$desktop-only} {
+		z-index: 1;
 		box-sizing: border-box;
 		width: 565px;
 		padding: 60px 80px 62px;

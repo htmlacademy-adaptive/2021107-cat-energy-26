@@ -19,7 +19,7 @@ export default {
 		"mobile": null
 	},
 	"images": {
-		"map": {
+		"location": {
 			"ext": "png",
 			"width": 320,
 			"height": 362,
