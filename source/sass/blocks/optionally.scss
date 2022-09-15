@@ -91,14 +91,21 @@
 .optionally__input:checked + .optionally__control-mark::before {
 	content: "";
 	position: absolute;
-	left: 7px;
-	top: 0;
+	left: 2px;
+	top: 1px;
 	bottom: 0;
 	margin: auto 0;
-	width: 13.5px;
-	height: 13.5px;
+	width: 24px;
+	height: 19px;
 	border-radius: 50%;
+	mask: url("../../img/stack.svg#checked") no-repeat center / contain;
 	background-color: var(--button-backgroud);
+
+	@media #{$not-mobile} {
+		left: 5px;
+		width: 26px;
+		height: 26px;
+	}
 }
 
 .optionally__input:disabled + .optionally__control-mark::before {
