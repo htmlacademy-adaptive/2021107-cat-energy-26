@@ -98,7 +98,7 @@
 	width: 24px;
 	height: 19px;
 	border-radius: 50%;
-	mask: url("../../img/stack.svg#checked") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#checked") no-repeat center / contain;
 	background-color: var(--button-backgroud);
 
 	@media #{$not-mobile} {

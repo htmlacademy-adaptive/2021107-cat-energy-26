@@ -125,17 +125,17 @@
 }
 
 .service__item--leaf::before {
-	background: var(--button-backgroud) url("../../img/stack.svg#leaf") no-repeat center / 30px 32px;
+	background: var(--button-backgroud) url("../../icons/stack.svg#leaf") no-repeat center / 30px 32px;
 }
 
 .service__item--tub::before {
-	background: var(--button-backgroud) url("../../img/stack.svg#tub") no-repeat center / 29px 31px;
+	background: var(--button-backgroud) url("../../icons/stack.svg#tub") no-repeat center / 29px 31px;
 }
 
 .service__item--eat::before {
-	background: var(--button-backgroud) url("../../img/stack.svg#eat") no-repeat center / 32px 33px;
+	background: var(--button-backgroud) url("../../icons/stack.svg#eat") no-repeat center / 32px 33px;
 }
 
 .service__item--alarm::before {
-	background: var(--button-backgroud) url("../../img/stack.svg#alarm") no-repeat center / 32px 33px;
+	background: var(--button-backgroud) url("../../icons/stack.svg#alarm") no-repeat center / 32px 33px;
 }

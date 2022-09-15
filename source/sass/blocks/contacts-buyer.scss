@@ -161,14 +161,14 @@
 	top: 8px;
 	width: 20px;
 	height: 20px;
-	mask: url("../../img/stack.svg#icon-email") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#email") no-repeat center / contain;
 	background-color: #222222;
 }
 
 .contacts-buyer__input-container--tel::before {
 	width: 21px;
 	height: 21px;
-	mask: url("../../img/stack.svg#icon-tel") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#tel") no-repeat center / contain;
 	background-color: #222222;
 }
 

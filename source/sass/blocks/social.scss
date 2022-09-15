@@ -24,7 +24,7 @@
 }
 
 .social__link--vkontakte {
-	mask: url("../../img/stack.svg#vk") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#vk") no-repeat center / contain;
 	background-color: #666666;
 
 	&:hover {
@@ -37,7 +37,7 @@
 }
 
 .social__link--youtube {
-	mask: url("../../img/stack.svg#youtube") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#yt") no-repeat center / contain;
 	background-color: #666666;
 
 	&:hover {
@@ -50,7 +50,7 @@
 }
 
 .social__link--telegram {
-	mask: url("../../img/stack.svg#telegram") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#tg") no-repeat center / contain;
 	background-color: #666666;
 
 	&:hover {
