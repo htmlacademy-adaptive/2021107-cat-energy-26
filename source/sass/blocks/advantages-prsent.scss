@@ -1,4 +1,12 @@
+.advantages-present {
+	@media #{$not-mobile} {
+		position: relative;
+	}
 
+	// @media #{$desktop-only} {
+	// 	position: static;
+	// }
+}
 
 .advantages-present__wrapper-text {
 	padding-top: 27px;

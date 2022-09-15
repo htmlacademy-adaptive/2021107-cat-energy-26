@@ -99,16 +99,17 @@
 .advantages__button {
 	margin: 0 auto;
 
+	//На странице индекс
 	@media #{$not-mobile} {
 		width: 244px;
 		position: absolute;
-		left: 120px;
-		top: 70%;
+		left: 90px;
+		top: 30.6%;
 	}
 
 	@media #{$desktop-only} {
 		width: 242px;
-		left: 191px;
-		top: 116.7%;
+		left: 81px;
+		top: 39.9%;
 	}
 }
