@@ -54,35 +54,14 @@
 	display: block;
 	width: 34px;
 	height: 39px;
-	margin-right: 57px;
+	margin-right: 55px;
 	object-fit: fill;
-
-	// & .logo-mobile svg[id="logo-text"] {
-	// 	display: none;
-	// }
-
-	// & .logo-mobile svg[id="tablet"] {
-	// 	display: none;
-	// }
-
-	// & .logo-mobile svg[id="desctop"] {
-	// 	display: none;
-	// }
-
+	padding-bottom: 8px;
 
 	@media #{$not-mobile} {
 		margin-right: 12px;
 		width: 174px;
 		height: 52px;
-
-
-		// & .logo-mobile svg[id="mobile"] {
-		// 	display: none;
-		// }
-
-		// & .logo-tablet {
-		// 	display: block;
-		// }
 	}
 
 	@media #{$not-mobile} {
@@ -93,8 +72,8 @@
 
 .main-header__logo-text {
 	display: block;
-	width: 101px;
-	height: 18px;
+	width: 103px;
+	height: 19px;
 	object-fit: fill;
 
 	@media #{$not-mobile} {

@@ -2,6 +2,7 @@
 .contacts {
 	@media #{$desktop-only} {
 		position: relative;
+		max-width: 1440px;
 	}
 }
 
