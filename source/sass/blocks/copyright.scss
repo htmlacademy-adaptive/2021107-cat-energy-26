@@ -15,6 +15,15 @@
 	justify-content: space-between;
 	align-items: center;
 	text-decoration: none;
+
+	@media #{$not-mobile} {
+		max-width: 200px;
+	}
+
+
+	@media #{$desktop-only} {
+		padding: 4px 0 29px 20px;
+	}
 }
 
 .copyright__text {
@@ -44,6 +53,7 @@
 	background-color: #666666;
 
 	@media #{$not-mobile} {
+		padding: 26px 0;
 		width: 27px;
 		height: 34px;
 	}

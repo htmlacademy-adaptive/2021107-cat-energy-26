@@ -149,16 +149,8 @@
 	}
 }
 
-// .contacts-buyer__input:focus + .contacts-buyer__input-container::before {
-// 	background-color: #68b738;
-// }
-
-// .contacts-buyer__input:invalid + .contacts-buyer__input-container::before {
-// 	background-color: #ff8282;
-// }
-
 .contacts-buyer__input-container--email::before {
-	top: 8px;
+	top: 2px;
 	width: 20px;
 	height: 20px;
 	mask: url("../../icons/stack.svg#email") no-repeat center / contain;
@@ -166,8 +158,10 @@
 }
 
 .contacts-buyer__input-container--tel::before {
-	width: 21px;
-	height: 21px;
+	width: 27px;
+	height: 27px;
+	right: 10px;
+	top: 3px;
 	mask: url("../../icons/stack.svg#tel") no-repeat center / contain;
 	background-color: #222222;
 }

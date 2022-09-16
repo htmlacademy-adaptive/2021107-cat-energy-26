@@ -14,7 +14,7 @@
 			top: 0;
 			right: 0;
 			left: 0;
-			height: 302px;
+			height: 28.2%;
 			background:
 				linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
 				var(--bg-image) no-repeat center / contain,
@@ -105,12 +105,14 @@
 		width: 244px;
 		position: absolute;
 		left: 90px;
-		top: 30.6%;
+		// top: 30.6%;
+		bottom: 63%;
 	}
 
 	@media #{$desktop-only} {
 		width: 242px;
 		left: 81px;
 		top: 39.9%;
+		bottom: auto;
 	}
 }

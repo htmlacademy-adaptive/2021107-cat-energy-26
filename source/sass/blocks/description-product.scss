@@ -77,6 +77,10 @@
 		font-size: 16px;
 		line-height: 1.25;
 	}
+
+	@media #{$desktop-only} {
+		padding-top: 7px;
+	}
 }
 
 .description-product__quantity--additional-end {
@@ -87,5 +91,9 @@
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 1.25;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 7px;
 	}
 }

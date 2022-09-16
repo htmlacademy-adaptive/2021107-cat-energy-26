@@ -50,11 +50,17 @@
 	}
 }
 
+.main-header__logo--mobile {
+	@media #{$not-mobile} {
+		display: none;
+	}
+}
+
 .main-header__logo-image {
 	display: block;
 	width: 34px;
 	height: 39px;
-	margin-right: 55px;
+	// margin-right: 55px;
 	object-fit: fill;
 	padding-bottom: 8px;
 
@@ -72,11 +78,18 @@
 
 .main-header__logo-text {
 	display: block;
+	margin: 3px 0 0 -2px;
 	width: 103px;
-	height: 19px;
+	height: 20px;
 	object-fit: fill;
 
 	@media #{$not-mobile} {
 		display: none;
+	}
+}
+
+.main-header__nav {
+	@media #{$desktop-only} {
+		justify-self: end;
 	}
 }

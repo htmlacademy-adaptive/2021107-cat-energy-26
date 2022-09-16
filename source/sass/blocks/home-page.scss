@@ -1,6 +1,6 @@
-.home-page {
-	padding: 13px 0 6px;
-}
+// .home-page {
+// 	padding: 13px 0 6px;
+// }
 
 .home-page__logo-text {
 	display: block;
@@ -8,11 +8,22 @@
 	width: 130px;
 	height: 26px;
 	object-fit: fill;
+	padding: 37px 20px 30px;
+
+
+	@media #{$not-mobile} {
+		padding: 32px 20px 19px 0;
+	}
+
+
+	@media #{$desktop-only} {
+		padding: 33px 20px 33px 0;
+	}
 }
 
-.home-page__link {
-	padding: 14px;
-}
+// .home-page__link {
+// 	padding: 14px;
+// }
 
 .home-page__link:hover .home-page__logo-text {
 	opacity: 0.8;

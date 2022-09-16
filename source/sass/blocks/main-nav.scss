@@ -3,6 +3,11 @@
 	// justify-self: end;
 	align-self: center;
 
+	@media #{$not-mobile} {
+		margin-left: auto;
+	}
+
+
 	@media #{$desktop-only} {
 		// width: 100%;
 		// background-color: #68b738;

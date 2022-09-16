@@ -29,6 +29,10 @@
 		font-size: 20px;
 		line-height: 1;
 	}
+
+	@media #{$desktop-only} {
+		padding: 17px 26px;
+	}
 }
 
 .button--advantages {
