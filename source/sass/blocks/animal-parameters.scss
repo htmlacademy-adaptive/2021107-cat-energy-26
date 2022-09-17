@@ -46,7 +46,8 @@
 
 .animal-parameters__text {
 	margin-right: 15px;
-	white-space: nowrap;
+	max-width: 120px;
+	// white-space: nowrap;
 	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -57,6 +58,7 @@
 	color: var(--base-color);
 
 	@media #{$not-mobile} {
+		max-width: 200px;
 		margin-right: 17px;
 		font-size: 20px;
 		line-height: 1.5;

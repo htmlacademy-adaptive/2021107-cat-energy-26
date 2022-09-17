@@ -36,7 +36,7 @@
 }
 
 .form__button {
-	margin: 0 auto 29px;
+	margin: 0 auto 22px;
 
 	@media #{$not-mobile} {
 		margin: 0;
@@ -50,7 +50,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.14px;
+	line-height: 1.14;
 	text-align: center;
 	color: var(--main-color);
 

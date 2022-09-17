@@ -14,6 +14,7 @@
 }
 
 .contacts-buyer__legend {
+	max-width: 280px;
 	padding: 26px 22px 0 0;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -24,6 +25,7 @@
 	background-color: var(--main-background);
 
 	@media #{$not-mobile} {
+		max-width: none;
 		margin-left: -40px;
 		padding: 0 39px 0 38px;
 		font-size: 36px;
@@ -59,7 +61,8 @@
 
 .contacts-buyer__text {
 	margin-right: 10px;
-	white-space: nowrap;
+	max-width: 80px;
+	// white-space: nowrap;
 	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -71,6 +74,7 @@
 
 	@media #{$not-mobile} {
 		margin-right: 17px;
+		max-width: 200px;
 		font-size: 20px;
 		line-height: 1.5;
 	}
@@ -84,7 +88,7 @@
 
 
 .contacts-buyer__input {
-	width: 159px;
+	// width: 159px;
 	flex-grow: 1;
 	padding: 13px 45px 11px 14px;
 	font-family: var(--accent-font);
@@ -122,14 +126,14 @@
 
 .contacts-buyer__input[type="email"] {
 	@media #{$not-mobile} {
-		width: 228px;
+		// width: 228px;
 		padding-left: 23px;
 	}
 }
 
 
 .contacts-buyer__input[type="tel"] {
-	width: 142px;
+	// width: 142px;
 
 	@media #{$not-mobile} {
 		width: 221px;
