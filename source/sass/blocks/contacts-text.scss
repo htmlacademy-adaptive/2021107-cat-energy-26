@@ -36,6 +36,7 @@
 	line-height: 1.25;
 	text-transform: uppercase;
 	color: var(--contacts-color);
+	grid-column: 1 / 2;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
@@ -51,6 +52,7 @@
 	font-size: 14px;
 	line-height: 1.43;
 	color: var(--base-color);
+	grid-column: 2 / 3;
 
 	@media #{$not-mobile} {
 		font-size: 16px;

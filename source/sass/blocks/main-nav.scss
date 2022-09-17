@@ -21,6 +21,7 @@
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
+	position: relative;
 
 	// &:hover,
 	// &:active {
@@ -111,5 +112,6 @@
 	@media #{$not-mobile} {
 		position: static;
 		display: flex;
+		justify-content: space-around;
 	}
 }

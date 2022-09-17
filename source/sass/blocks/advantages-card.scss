@@ -1,44 +1,42 @@
 
 .advantages-card {
-	background-color: #f2f2f2;
+	background-color: var(--footer-background);
 	padding: 30px 20px 0 20px;
-	position: relative;
+	// position: relative;
 
 	&::before {
 		content: "";
 		position: absolute;
-		top: 23px;
-		left: 21px;
-		width: 50px;
-		height: 50px;
+		// top: -6px;
+		// left: 2px;
+		// width: 50px;
+		// height: 50px;
 		border-radius: 50%;
 		background-color: var(--button-backgroud);
-		// background: linear-gradient(var(--button-backgroud), var(--button-backgroud));
-		// background:
-		// linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-		// var(--bg-image) no-repeat left / contain,
-		// linear-gradient(to right, #4f4e54 50%, #424147 50%);
-
 
 		@media #{$not-mobile} {
-			top: 92px;
+			top: 24.6%;
 			right: 62px;
 			left: auto;
 			width: 200px;
 			height: 200px;
+			// position: static;
 		}
 
 		@media #{$desktop-only} {
-			top: 47px;
-			// right: 62px;
-			left: 50px;
-			width: 100px;
-			height: 100px;
+			display: none;
+			// top: 47px;
+			// // right: 62px;
+			// left: 50px;
+			// width: 100px;
+			// height: 100px;
 		}
 	}
 
+
 	@media #{$not-mobile} {
 		padding: 77px 316px 0 52px;
+		position: relative;
 	}
 
 	@media #{$desktop-only} {
@@ -47,16 +45,14 @@
 }
 
 .advantages-card--slim::after {
+	display: none;
 	content: "";
 	position: absolute;
-	top: 21px;
-	left: 29px;
-	width: 36px;
-	height: 50px;
 	background: url("../../icons/stack.svg#cat-slim") no-repeat center / cover;
 
 	@media #{$not-mobile} {
-		top: 80px;
+		display: block;
+		top: 21.3%;
 		left: auto;
 		right: 88px;
 		width: 144px;
@@ -64,25 +60,25 @@
 	}
 
 	@media #{$desktop-only} {
-		top: 41px;
-		left: 68px;
-		right: auto;
-		width: 70px;
-		height: 97px;
+		display: none;
+		// top: 41px;
+		// left: 68px;
+		// right: auto;
+		// width: 70px;
+		// height: 97px;
 	}
 }
 
 .advantages-card--pro::after {
+	display: none;
 	content: "";
 	position: absolute;
-	top: 35px;
-	left: 12px;
-	width: 69px;
-	height: 29px;
+
 	background: url("../../icons/stack.svg#cat-pro") no-repeat center / cover;
 
 	@media #{$not-mobile} {
-		top: 134px;
+		display: block;
+		top: 36%;
 		left: auto;
 		right: 25px;
 		width: 274px;
@@ -90,14 +86,14 @@
 	}
 
 	@media #{$desktop-only} {
-		top: 67px;
-		left: 32px;
-		right: auto;
-		width: 136px;
-		height: 58px;
+		display: none;
+		// top: 67px;
+		// left: 32px;
+		// right: auto;
+		// width: 136px;
+		// height: 58px;
 	}
 }
-
 
 .advantages-card__title {
 	margin: 0 0 29px;
@@ -109,6 +105,36 @@
 	line-height: 1.54;
 	text-transform: uppercase;
 	color: var(--main-color);
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -6px;
+		left: 2px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: var(--button-backgroud);
+
+		@media #{$not-mobile} {
+			display: none;
+			// top: 92px;
+			// right: 62px;
+			// left: auto;
+			// width: 200px;
+			// height: 200px;
+			// position: static;
+		}
+
+		@media #{$desktop-only} {
+			display: block;
+			top: -31px;
+			left: 2px;
+			width: 100px;
+			height: 100px;
+		}
+	}
 
 
 	@media #{$not-mobile} {
@@ -121,6 +147,62 @@
 	@media #{$desktop-only} {
 		margin-bottom: 73px;
 		padding-left: 164px;
+	}
+}
+
+.advantages-card--slim .advantages-card__title::after {
+	content: "";
+	position: absolute;
+	top: -9px;
+	left: 8px;
+	width: 38px;
+	height: 50px;
+	background: url("../../icons/stack.svg#cat-slim") no-repeat center / cover;
+
+	@media #{$not-mobile} {
+		display: none;
+		// top: 80px;
+		// left: auto;
+		// right: 88px;
+		// width: 144px;
+		// height: 197px;
+	}
+
+	@media #{$desktop-only} {
+		display: block;
+		top: -37px;
+		left: 17px;
+		right: auto;
+		width: 72px;
+		height: 98px;
+	}
+}
+
+.advantages-card--pro .advantages-card__title::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -8px;
+	width: 69px;
+	height: 29px;
+	background: url("../../icons/stack.svg#cat-pro") no-repeat center / cover;
+
+	@media #{$not-mobile} {
+		display: none;
+		// top: 134px;
+		// left: auto;
+		// right: 25px;
+		// width: 274px;
+		// height: 118px;
+	}
+
+	@media #{$desktop-only} {
+		display: block;
+		top: -12px;
+		left: -18px;
+		right: auto;
+		width: 138px;
+		height: 60px;
 	}
 }
 

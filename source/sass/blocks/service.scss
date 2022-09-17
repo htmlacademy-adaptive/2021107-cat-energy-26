@@ -16,6 +16,7 @@
 
 	@media #{$desktop-only} {
 		padding: 42px 0 0;
+		margin-bottom: 18px;
 	}
 }
 
@@ -119,6 +120,7 @@
 	}
 
 	@media #{$desktop-only} {
+		margin-bottom: 0;
 		max-width: 250px;
 		padding: 155px 0 32px;
 	}

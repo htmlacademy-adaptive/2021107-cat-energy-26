@@ -163,6 +163,10 @@
 	padding: 10px 44px;
 	font-size: 16px;
 	line-height: 1.25;
+
+	@media #{$desktop-only} {
+		align-self: center;
+	}
 }
 
 .button--form {
