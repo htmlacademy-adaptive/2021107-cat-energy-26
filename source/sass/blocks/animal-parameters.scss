@@ -93,8 +93,8 @@
 	}
 
 	&:invalid {
-		border-width: 2px;
-		border-color: #ff8282;
+		outline-width: 2px;
+		outline-color: #ff8282;
 	}
 
 	@media #{$not-mobile} {

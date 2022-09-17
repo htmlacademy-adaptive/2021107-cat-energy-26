@@ -62,7 +62,6 @@
 .contacts-buyer__text {
 	margin-right: 10px;
 	max-width: 80px;
-	// white-space: nowrap;
 	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -88,7 +87,6 @@
 
 
 .contacts-buyer__input {
-	// width: 159px;
 	flex-grow: 1;
 	padding: 13px 45px 11px 14px;
 	font-family: var(--accent-font);
@@ -126,15 +124,12 @@
 
 .contacts-buyer__input[type="email"] {
 	@media #{$not-mobile} {
-		// width: 228px;
 		padding-left: 23px;
 	}
 }
 
 
 .contacts-buyer__input[type="tel"] {
-	// width: 142px;
-
 	@media #{$not-mobile} {
 		width: 221px;
 	}
@@ -144,8 +139,6 @@
 	&::before {
 		content: "";
 		position: absolute;
-		// width: 20px;
-		// height: 20px;
 		right: 15px;
 		top: 0;
 		bottom: 0;
