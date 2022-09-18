@@ -24,8 +24,9 @@
 	width: 124px;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 16px;
-	padding: 13px 20px 14px;
+	margin-bottom: 36px;
+	padding: 13px 0 0;
+
 	position: relative;
 	border: 1px solid var(--example-border);
 	border-radius: 3px;
@@ -68,9 +69,11 @@
 }
 
 .example__description {
+	margin-bottom: -8px;
 	width: 82px;
 	position: relative;
-	top: 15%;
+	top: 23%;
+	left: 15%;
 	z-index: 2;
 	background-color: var(--statistics-background);
 	font-family: var(--main-font);
@@ -85,13 +88,13 @@
 	@media #{$not-mobile} {
 		width: max-content;
 		max-width: 144px;
+		left: 0;
+		right: 0;
 		top: 20%;
+		margin: 0 auto 3px;
 		padding: 0 8px;
 		background-color: var(--main-background);
 		font-size: 14px;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
 	}
 
 	@media #{$desktop-only} {

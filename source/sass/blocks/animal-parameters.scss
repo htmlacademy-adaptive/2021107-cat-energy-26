@@ -47,7 +47,6 @@
 .animal-parameters__text {
 	margin-right: 15px;
 	max-width: 120px;
-	// white-space: nowrap;
 	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -92,10 +91,16 @@
 		outline-color: var(--base-color);
 	}
 
-	&:invalid {
+	// Реализация через класс см. &--error
+	// &:invalid {
+	// 	outline-width: 2px;
+	// 	outline-color: #ff8282;
+	// }
+	&--error {
 		outline-width: 2px;
 		outline-color: #ff8282;
 	}
+
 
 	@media #{$not-mobile} {
 		padding-left: 17px;

@@ -18,13 +18,13 @@
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">ИМЯ:*</span>
-							<input class="animal-parameters__input animal-parameters__input--text" type="text" name="name" placeholder="барсик" required>
+							<input class="animal-parameters__input animal-parameters__input--error" type="text" name="name" placeholder="барсик" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Вес (кг):*</span>
-							<input class="animal-parameters__input" type="number" name="weight" placeholder="7" required>
+							<input class="animal-parameters__input animal-parameters__input--error" type="number" name="weight" placeholder="7" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
@@ -42,21 +42,19 @@
 				<ul class="effect__list">
 					<li class="effect__item ">
 						<label class="effect__label type-radio">
-							<input class="visually-hidden effect__input" type="radio" name="effect" value="slim" checked>
-							<span class="effect__control-mark"></span>
+							<input class="effect__input" type="radio" name="effect" value="slim" checked>
 							<span class="effect__text">похудение</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="visually-hidden effect__input" type="radio" name="effect" value="overweight">
-							<span class="effect__control-mark"></span>
+							<input class="effect__input" type="radio" name="effect" value="overweight">
 							<span class="effect__text">Набор массы</span>
 						</label>
 					</li>
 					<li class="effect__item">
 						<label class="effect__label type-radio">
-							<input class="visually-hidden effect__input" type="radio" name="effect" value="suspense"><span class="effect__control-mark"></span>
+							<input class="effect__input" type="radio" name="effect" value="suspense">
 							<span class="effect__text">Не знаю (Нужен ваш совет)</span>
 						</label>
 					</li>
@@ -70,7 +68,7 @@
 					<li class="contacts-buyer__item ">
 						<label class="contacts-buyer__label">
 							<span class="contacts-buyer__text">E-mail:*</span>
-							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input contacts-buyer__input--error" type="email" name="email" placeholder="kuklachev@gmail.com" required>
 								<span class="contacts-buyer__input-container contacts-buyer__input-container--email"></span>
 							</span>
 						</label>
@@ -78,7 +76,7 @@
 					<li class="contacts-buyer__item">
 						<label class="contacts-buyer__label type-radio">
 							<span class="contacts-buyer__text">Телефон:*</span>
-							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input contacts-buyer__input--error" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
 								<span class="contacts-buyer__input-container contacts-buyer__input-container--tel"></span>
 
 							</span>
@@ -100,31 +98,25 @@
 				<ul class="optionally__list">
 					<li class="optionally__item ">
 						<label class="optionally__label type-checkbox">
-							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked>
-							<span class="optionally__control-mark"></span>
+							<input class="optionally__input" type="checkbox" name="optionally" value="sugar substitute" checked>
 							<span class="optionally__text">сахарозаменитель</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label ttype-checkbox">
-							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="water">
-							<span class="optionally__control-mark"></span>
-
+							<input class="optionally__input" type="checkbox" name="optionally" value="water">
 							<span class="optionally__text">питьевая вода</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="milk">
-							<span class="optionally__control-mark"></span>
+							<input class="optionally__input" type="checkbox" name="optionally" value="milk">
 							<span class="optionally__text">молоко</span>
 						</label>
 					</li>
 					<li class="optionally__item">
 						<label class="optionally__label type-checkbox">
-							<input class="visually-hidden optionally__input" type="checkbox" name="optionally" value="vitamins">
-							<span class="optionally__control-mark"></span>
-
+							<input class="optionally__input" type="checkbox" name="optionally" value="vitamins">
 							<span class="optionally__text">витамины</span>
 						</label>
 					</li>

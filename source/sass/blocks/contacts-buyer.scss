@@ -1,6 +1,6 @@
 .contacts-buyer {
 	/*верхний padding: расстояние от нижней границы легенды до полей ввода*/
-	padding: 33px 0 11px;
+	padding: 36px 0 11px;
 	border: none;
 
 	@media #{$not-mobile} {
@@ -109,9 +109,14 @@
 		outline-width: 2px;
 	}
 
-	&:invalid {
-		outline-color: #ff8282;
+	// Реализация через класс см. &--error
+	// &:invalid {
+	// 	outline-color: #ff8282;
+	// 	outline-width: 2px;
+	// }
+	&--error {
 		outline-width: 2px;
+		outline-color: #ff8282;
 	}
 
 
@@ -163,10 +168,14 @@
 	background-color: #222222;
 }
 
+.contacts-buyer__input:hover + .contacts-buyer__input-container::before {
+	background-color: #222222;
+}
+
 .contacts-buyer__input:focus + .contacts-buyer__input-container::before {
 	background-color: var(--button-backgroud);
 }
 
-.contacts-buyer__input:invalid + .contacts-buyer__input-container::before {
+.contacts-buyer__input--error + .contacts-buyer__input-container::before {
 	background-color: #ff8282;
 }
