@@ -4,24 +4,17 @@
 }
 
 .range__range-bar {
-	// width: 4px;
-	// height: 110%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -21%);
 
-	// background-color: #666666;
-	// border-radius: 2px;
-
 	@media #{$not-mobile} {
 		// height: 111%;
 		top: 21%;
-		// transform: translate(-50%, -47%);
 	}
 
 	@media #{$desktop-only} {
-		// height: 109.5%;
 		top: 23%;
 		left: 45%;
 		transform: translate(-4%, -5%);
@@ -75,7 +68,6 @@
 		width: 4px;
 		height: 108px;
 		right: 16px;
-		// top: 50%;
 		top: calc(50% + 19px);
 		background-color: #666666;
 		border-radius: 2px;

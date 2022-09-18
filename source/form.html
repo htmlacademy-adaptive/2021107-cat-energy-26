@@ -15,16 +15,19 @@
 			<fieldset class="form__parameters animal-parameters">
 				<legend class="visually-hidden">Параметры кота </legend>
 				<ul class="animal-parameters__list">
+
+					{# Для отображения ошибки добавить input класс animal-parameters__input--error #}
+
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">ИМЯ:*</span>
-							<input class="animal-parameters__input animal-parameters__input--error" type="text" name="name" placeholder="барсик" required>
+							<input class="animal-parameters__input" type="text" name="name" placeholder="барсик" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
 						<label class="animal-parameters__label">
 							<span class="animal-parameters__text">Вес (кг):*</span>
-							<input class="animal-parameters__input animal-parameters__input--error" type="number" name="weight" placeholder="7" required>
+							<input class="animal-parameters__input" type="number" name="weight" placeholder="7" required>
 						</label>
 					</li>
 					<li class="animal-parameters__item">
@@ -65,10 +68,13 @@
 			<fieldset class="form__parameters contacts-buyer">
 				<legend class="contacts-buyer__legend visible-legend">Контактные данные <br>(владельца кота)</legend>
 				<ul class="contacts-buyer__list">
+
+{# Для отображения ошибки добавить input класс contacts-buyer__input--error #}
+
 					<li class="contacts-buyer__item ">
 						<label class="contacts-buyer__label">
 							<span class="contacts-buyer__text">E-mail:*</span>
-							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input contacts-buyer__input--error" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
 								<span class="contacts-buyer__input-container contacts-buyer__input-container--email"></span>
 							</span>
 						</label>
@@ -76,7 +82,7 @@
 					<li class="contacts-buyer__item">
 						<label class="contacts-buyer__label type-radio">
 							<span class="contacts-buyer__text">Телефон:*</span>
-							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input contacts-buyer__input--error" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+							<span class="contacts-buyer__wrap-input">							<input class="contacts-buyer__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
 								<span class="contacts-buyer__input-container contacts-buyer__input-container--tel"></span>
 
 							</span>

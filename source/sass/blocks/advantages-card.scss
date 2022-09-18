@@ -1,16 +1,10 @@
-
 .advantages-card {
 	background-color: var(--footer-background);
 	padding: 30px 20px 0 20px;
-	// position: relative;
 
 	&::before {
 		content: "";
 		position: absolute;
-		// top: -6px;
-		// left: 2px;
-		// width: 50px;
-		// height: 50px;
 		border-radius: 50%;
 		background-color: var(--button-backgroud);
 
@@ -20,16 +14,10 @@
 			left: auto;
 			width: 200px;
 			height: 200px;
-			// position: static;
 		}
 
 		@media #{$desktop-only} {
 			display: none;
-			// top: 47px;
-			// // right: 62px;
-			// left: 50px;
-			// width: 100px;
-			// height: 100px;
 		}
 	}
 
@@ -61,11 +49,6 @@
 
 	@media #{$desktop-only} {
 		display: none;
-		// top: 41px;
-		// left: 68px;
-		// right: auto;
-		// width: 70px;
-		// height: 97px;
 	}
 }
 
@@ -87,11 +70,6 @@
 
 	@media #{$desktop-only} {
 		display: none;
-		// top: 67px;
-		// left: 32px;
-		// right: auto;
-		// width: 136px;
-		// height: 58px;
 	}
 }
 
@@ -119,12 +97,6 @@
 
 		@media #{$not-mobile} {
 			display: none;
-			// top: 92px;
-			// right: 62px;
-			// left: auto;
-			// width: 200px;
-			// height: 200px;
-			// position: static;
 		}
 
 		@media #{$desktop-only} {
@@ -161,11 +133,6 @@
 
 	@media #{$not-mobile} {
 		display: none;
-		// top: 80px;
-		// left: auto;
-		// right: 88px;
-		// width: 144px;
-		// height: 197px;
 	}
 
 	@media #{$desktop-only} {
@@ -189,11 +156,6 @@
 
 	@media #{$not-mobile} {
 		display: none;
-		// top: 134px;
-		// left: auto;
-		// right: 25px;
-		// width: 274px;
-		// height: 118px;
 	}
 
 	@media #{$desktop-only} {

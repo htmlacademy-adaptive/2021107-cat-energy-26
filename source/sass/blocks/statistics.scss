@@ -110,49 +110,14 @@
 
 .statistics__example {
 	margin: 0;
-
-	// @media #{$desktop-only} {
-	// 	background-color: var(--footer-background);
-	// }
 }
 
 .statistics__images-wrapper {
-	// position: relative;
 	margin: 0 auto;
 
-	// @media #{$not-mobile} {
-	// 	background-color: var(--statistics-background);
-	// }
 
 	@media #{$desktop-only} {
 		grid-row: 1 / -1;
 		top: 12%;
-		// left: -30px;
-		// background-color: var(--footer-background);
 	}
 }
-
-// .statistics__images {
-// margin: 0 auto;
-// display: block;
-
-// @media #{$not-mobile} {
-// 	margin-bottom: -50px;
-
-// 	width: 560px;
-// 	height: 512px;
-// 	position: relative;
-// 	top: -151px;
-// }
-
-// @media #{$desktop-only} {
-// 	margin: 0 auto -84px;
-// 	top: -125px;
-// }
-// }
-
-// .statistics__range {
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// }

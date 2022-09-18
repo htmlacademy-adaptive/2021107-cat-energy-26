@@ -78,7 +78,6 @@
 		margin: auto 0;
 		width: 32px;
 		height: 12px;
-		// background: url("../../icons/stack.svg#arrow") no-repeat center / contain;
 		mask: url("../../icons/stack.svg#arrow") no-repeat center / contain;
 		background-color: var(--base-color);
 
@@ -132,7 +131,6 @@
 .button--product-card {
 	font-size: 16px;
 	padding-bottom: 8px;
-	// line-height: 1.25px;
 
 	@media #{$not-mobile} {
 		padding: 13px 26px 11px;
