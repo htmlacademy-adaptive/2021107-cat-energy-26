@@ -2,7 +2,7 @@
 	@include bg-image("catalog-stock");
 
 	width: 100%;
-	height: 100%;
+	min-height: 290px;
 	background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), var(--bg-image) no-repeat center/contain;
 
 	position: relative;
@@ -13,12 +13,21 @@
 		width: 78px;
 		height: 80px;
 		top: 58px;
-		left: 100px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
 		background: url("../../icons/stack.svg#gift") no-repeat center / contain;
+
+		@media #{$not-mobile} {
+			margin: 0;
+			left: 11%;
+		}
 	}
 
 
 	@media #{$not-mobile} {
+		min-height: 200px;
+
 		&::before {
 			width: 80px;
 			height: 83px;
@@ -35,8 +44,9 @@
 }
 
 .stock__advantages {
-	margin: 0;
-	padding: 187px 42px 43px;
+	margin: 0 auto;
+	padding: 187px 0 0;
+	max-width: 60%;
 	font-family: var(--main-font);
 	font-style: normal;
 	font-weight: 400;
@@ -47,12 +57,13 @@
 
 	@media #{$not-mobile} {
 		width: 165px;
-		padding: 70px 0 70px 60%;
+		padding: 70px 0 70px 43%;
 		text-align: start;
 	}
 
 	@media #{$desktop-only} {
 		margin: 0 auto;
+		max-width: 170px;
 		padding: 187px 0 0;
 		text-align: center;
 	}

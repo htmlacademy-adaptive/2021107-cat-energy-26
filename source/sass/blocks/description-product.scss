@@ -75,6 +75,7 @@
 	font-size: 14px;
 	line-height: 1;
 	grid-column: 1 / 2;
+	justify-self: start;
 
 	@media #{$not-mobile} {
 		grid-column: 2 / 3;
