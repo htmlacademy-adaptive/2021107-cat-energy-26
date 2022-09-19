@@ -1,16 +1,16 @@
 
 .contacts {
 	@media #{$desktop-only} {
-		position: relative;
-		max-width: 1440px;
+		display: grid;
+		grid-template-columns: auto 565px 655px auto;
+		grid-template-rows: 95px auto 108px;
 	}
 }
 
 .contacts__text {
 	@media #{$desktop-only} {
-		position: absolute;
-		left: 110px;
-		top: 94px;
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
 	}
 }
 
@@ -22,7 +22,8 @@
 	}
 
 	@media #{$desktop-only} {
-		margin: 0 auto;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
 	}
 }
 
@@ -43,9 +44,8 @@
 	display: block;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1440px;
 
 	@media #{$not-mobile} {
-		height: 400px;
+		height: 100%;
 	}
 }
